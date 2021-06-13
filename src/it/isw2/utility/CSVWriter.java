@@ -19,8 +19,8 @@ public class CSVWriter {
 	}
 	
 	public static void writeCsvBugginess(List<Release> releases, String projName) throws IOException {
-		try (FileWriter fileWriter = new FileWriter("out/csv/" + projName.toLowerCase() + ".csv")) {
-			String attributes = "Version;File_Name;LOC;LOC_touched;NR;NAuth;LOC_added;MAX_LOC_added;AVG_LOC_added;Churn;MAX_Churn;AVG_Churn;ChgSetSize;MAX_ChgSet;AVG_ChgSet;Bugginess\n";
+		try (var fileWriter = new FileWriter("out/csv/" + projName.toLowerCase() + ".csv")) {
+			var attributes = "Version;File_Name;LOC;LOC_touched;NR;NAuth;LOC_added;MAX_LOC_added;AVG_LOC_added;Churn;MAX_Churn;AVG_Churn;ChgSetSize;MAX_ChgSet;AVG_ChgSet;Bugginess\n";
 			fileWriter.append(attributes.replace(";", DELIM));
 			for (Release release : releases) {
 				for (JavaFile file : release.getJavaFiles()) {
@@ -102,9 +102,9 @@ public class CSVWriter {
 	}
 
 	public static void printCSV(List<EvalEntry> entries, String projName) throws IOException {
-		File file = new File("out/csv/" + projName.toLowerCase() + "_eval.csv");
+		var file = new File("out/csv/" + projName.toLowerCase() + "_eval.csv");
 		
-		try (FileWriter writer = new FileWriter(file)) {
+		try (var writer = new FileWriter(file)) {
 			String attributes = "Dataset;#TrainingRelease;%Training;%Defective_in_training;%Defective_in_testing;Classifier;"
 								+ "Balancing;Feature_Selection;Sensitivity;TP;FP;TN;FN;Precision;Recall;AUC;Kappa\n";
 			writer.append(attributes.replace(";", DELIM));

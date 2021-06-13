@@ -64,7 +64,7 @@ public class ProportionController {
 		int ov = ticket.getOv();
 		int iv = ticket.getIv();
 		
-		int roundedP = 0;
+		var roundedP = 0;
 		
 		// If FV=OV then P=0
 		if (fv != ov) {
@@ -78,7 +78,7 @@ public class ProportionController {
 	private static void setIV(List<Ticket> propList, Ticket ticket) {
 		List<Integer> listP = new ArrayList<>();
 		int p;
-		int sum = 0;
+		var sum = 0;
 		
 		for (Ticket t : propList) {
 			p = computeP(t);

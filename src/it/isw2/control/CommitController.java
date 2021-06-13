@@ -106,8 +106,8 @@ public class CommitController {
 	}	
 		
 	public static int compareDateRelease(LocalDateTime date, List<Release> releases) {
-		int releaseIndex = 0;
-		for (int i = 0; i < releases.size(); i++) {
+		var releaseIndex = 0;
+		for (var i = 0; i < releases.size(); i++) {
 			if (date.isBefore(releases.get(i).getReleaseDate())) {
 				releaseIndex = releases.get(i).getIndex();
 				break;

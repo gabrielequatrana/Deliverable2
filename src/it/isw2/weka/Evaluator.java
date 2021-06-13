@@ -50,7 +50,7 @@ public class Evaluator {
 		filter.setAttributeIndex("1");
 		filter.setInputFormat(dataset);
 
-		for (int a = 2; a <= parts; a++) {
+		for (var a = 2; a <= parts; a++) {
 
 			filter.setInvertSelection(true);
 			filter.setSplitPoint(a);
@@ -63,9 +63,9 @@ public class Evaluator {
 			filter.setSplitPoint(a);
 			Instances testing = Filter.useFilter(tmp, filter);
 
-			for (int i = 0; i <= 3; i++) {
-				for (int j = 0; j <= 1; j++) {
-					for (int k = 0; k <= 2; k++) {
+			for (var i = 0; i <= 3; i++) {
+				for (var j = 0; j <= 1; j++) {
+					for (var k = 0; k <= 2; k++) {
 						applyFilters(training, testing, i, j, k, a - 1);
 					}
 				}
@@ -117,12 +117,12 @@ public class Evaluator {
 
 		double trainingPerc = Utilities.round((double) training.numInstances() / dataset.numInstances() * 100, 2);
 
-		int defTraining = 0;
+		var defTraining = 0;
 		for (Instance instance : training) {
 			defTraining += (int) instance.value(training.numAttributes() - 1);
 		}
 
-		int defTesting = 0;
+		var defTesting = 0;
 		for (Instance instance : testing) {
 			defTesting += (int) instance.value(testing.numAttributes() - 1);
 		}
@@ -255,7 +255,7 @@ public class Evaluator {
 		double y = (double) Math.max(countValues[0], countValues[1]) / training.numInstances() * 100.0;
 
 		Resample resample = new Resample();
-		String[] opts = new String[] { "-B", "1.0", "-Z", String.valueOf(y * 2) };
+		var opts = new String[] { "-B", "1.0", "-Z", String.valueOf(y * 2) };
 		resample.setOptions(opts);
 		resample.setInputFormat(training);
 		fc.setFilter(resample);
@@ -267,7 +267,7 @@ public class Evaluator {
 		FilteredClassifier fc = new FilteredClassifier();
 
 		SpreadSubsample spreadSubsample = new SpreadSubsample();
-		String[] opts = new String[] { "-M", "1.0" };
+		var opts = new String[] { "-M", "1.0" };
 		spreadSubsample.setOptions(opts);
 		spreadSubsample.setInputFormat(training);
 		fc.setFilter(spreadSubsample);
@@ -286,7 +286,7 @@ public class Evaluator {
 		}
 		
 		SMOTE smote = new SMOTE();
-		String[] opts = new String[] {"-P", String.valueOf(y)};
+		var opts = new String[] {"-P", String.valueOf(y)};
 		smote.setOptions(opts);
 		smote.setInputFormat(training);
 		fc.setFilter(smote);
@@ -351,7 +351,7 @@ public class Evaluator {
 
 	private static int[] countValues(Instances training) {
 		// 0: negative, 1: positive
-		int[] countValues = new int[training.attribute(training.numAttributes() - 1).numValues()];
+		var countValues = new int[training.attribute(training.numAttributes() - 1).numValues()];
 		for (Instance instance : training) {
 			countValues[(int) instance.value(training.numAttributes() - 1)]++;
 		}

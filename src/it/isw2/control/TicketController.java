@@ -78,9 +78,9 @@ public class TicketController {
 			avList.add(null);
 		}
 		else {
-			for (int i = 0; i < versions.length(); i++) {
+			for (var i = 0; i < versions.length(); i++) {
 				String av = versions.getJSONObject(i).getString("name");
-				for (int j = 0; j < releases.size(); j++) {
+				for (var j = 0; j < releases.size(); j++) {
 					if (av.endsWith(releases.get(j).getName())) {
 						avList.add(releases.get(j).getIndex());
 					}
@@ -95,7 +95,7 @@ public class TicketController {
 	private static Integer getOVIndex(LocalDateTime date, List<Release> releases) {
 		Integer releaseIndex = 0;
 		
-		for (int i = 0; i < releases.size(); i++) {
+		for (var i = 0; i < releases.size(); i++) {
 			if (date.isBefore(releases.get(i).getReleaseDate())) {
 				releaseIndex = releases.get(i).getIndex();
 				break;

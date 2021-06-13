@@ -42,8 +42,8 @@ public class ReleaseController {
 		releaseNames = new HashMap<>();
 		releaseID = new HashMap<>();
 		for (i = 0; i < versions.length(); i++) {
-			String name = "";
-			String id = "";
+			var name = "";
+			var id = "";
 			if (versions.getJSONObject(i).has("releaseDate")) {
 				if (versions.getJSONObject(i).has("name"))
 					name = versions.getJSONObject(i).get("name").toString();
@@ -63,7 +63,7 @@ public class ReleaseController {
 		Map<LocalDateTime, String> map = new TreeMap<>(releaseNames);
 		Integer index = 1;
 		for (Map.Entry<LocalDateTime, String> entry : map.entrySet()) {
-			LocalDateTime date = LocalDateTime.parse(entry.getKey().toString());
+			var date = LocalDateTime.parse(entry.getKey().toString());
 			String name = entry.getValue();
 			Release release = new Release(index, date, name);
 			releaseList.add(release);
@@ -74,7 +74,7 @@ public class ReleaseController {
 	}
 
 	public static void addRelease(String strDate, String name, String id) {
-		LocalDate date = LocalDate.parse(strDate);
+		var date = LocalDate.parse(strDate);
 		LocalDateTime dateTime = date.atStartOfDay();
 
 		if (!releases.contains(dateTime))

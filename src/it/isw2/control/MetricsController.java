@@ -55,7 +55,7 @@ public class MetricsController {
 	}
 	
 	private static void getMetrics(List<DiffEntry> diffs, List<JavaFile> files, String authName, DiffFormatter df) {
-		int numDiff = 0;
+		var numDiff = 0;
 		for (DiffEntry diff : diffs) {
 			if (diff.toString().contains(".java")) {
 				numDiff++;
@@ -79,9 +79,9 @@ public class MetricsController {
 	}
 	
 	private static void addFiles(List<JavaFile> files, String fileName, String authName, int numDiff, DiffEntry diff, DiffFormatter df) {
-		int count = 0;
-		int locAdded = 0;
-		int locDeleted = 0;
+		var count = 0;
+		var locAdded = 0;
+		var locDeleted = 0;
 		
 		try {
 			for (Edit edit : df.toFileHeader(diff).toEditList()) {
@@ -208,13 +208,13 @@ public class MetricsController {
 	
 	public static int loc(TreeWalk treeWalk, Repository repository) throws IOException {
 		ObjectLoader loader = repository.open(treeWalk.getObjectId(0));
-		ByteArrayOutputStream output = new ByteArrayOutputStream();
+		var output = new ByteArrayOutputStream();
 		loader.copyTo(output);
 		
-		String fileContent = output.toString();
-		StringTokenizer token = new StringTokenizer(fileContent, "\n");
+		var fileContent = output.toString();
+		var token = new StringTokenizer(fileContent, "\n");
 		
-		int count = 0;
+		var count = 0;
 		while (token.hasMoreElements()) {
 			count++;
 			token.nextToken();

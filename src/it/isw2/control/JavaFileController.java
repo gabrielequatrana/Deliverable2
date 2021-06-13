@@ -54,7 +54,7 @@ public class JavaFileController {
 			}
 		}
 		
-		for (int i = 0; i < fileMap.size(); i++) {
+		for (var i = 0; i < fileMap.size(); i++) {
 			Object key = fileMap.keySet().toArray()[i];
 			fileMap.get(key).stream().distinct().collect(Collectors.toList());
 		}
@@ -80,7 +80,7 @@ public class JavaFileController {
 			}
 		}
 		
-		for (int i = 0; i < releases.size(); i++) {
+		for (var i = 0; i < releases.size(); i++) {
 			if (releases.get(i).getJavaFiles().isEmpty()) {
 				releases.get(i).setJavaFiles(releases.get(i-1).getJavaFiles());
 			}
@@ -258,7 +258,7 @@ public class JavaFileController {
 			fileMap.put(newPath, oldPaths);
 		}
 		else {
-			for (int i = 0; i < fileMap.size(); i++) {
+			for (var i = 0; i < fileMap.size(); i++) {
 				String key = (String) fileMap.keySet().toArray()[i];
 				
 				List<String> oldPaths = fileMap.get(key);

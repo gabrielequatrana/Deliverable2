@@ -22,7 +22,7 @@ public class CsvToArff {
 		Instances data = loader.getDataSet();
 		
 		// Save ARFF
-		File arff = new File("out/arff/" + projName.toLowerCase() + ".arff");
+		var arff = new File("out/arff/" + projName.toLowerCase() + ".arff");
 		ArffSaver saver = new ArffSaver();
 		saver.setInstances(data);
 		saver.setFile(arff);

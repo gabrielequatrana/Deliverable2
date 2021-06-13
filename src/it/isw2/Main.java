@@ -174,7 +174,7 @@ public class Main {
 	}
 	
 	private static void deleteDir(File directory) throws IOException {
-		Path rootPath = Paths.get(directory.getAbsolutePath());
+		var rootPath = Paths.get(directory.getAbsolutePath());
 		try (Stream<Path> walk = Files.walk(rootPath)) {
 		    walk.sorted(Comparator.reverseOrder())
 		        .map(Path::toFile)

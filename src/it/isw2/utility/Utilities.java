@@ -26,7 +26,7 @@ public class Utilities {
 	private static Logger logger = Logger.getLogger(Utilities.class.getName());
 	
 	private static String readAll(Reader rd) throws IOException {
-		StringBuilder sb = new StringBuilder();
+		var sb = new StringBuilder();
 	    int cp;
 	    while ((cp = rd.read()) != -1) {
 	    	sb.append((char) cp);
@@ -36,9 +36,7 @@ public class Utilities {
 
 	public static JSONArray readJsonArrayFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
-		try (
-				BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
-			) {
+		try (var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
 			String jsonText = readAll(rd);
 			return new JSONArray(jsonText);
 		} finally {
@@ -48,9 +46,7 @@ public class Utilities {
 
 	public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
 		InputStream is = new URL(url).openStream();
-		try (
-				BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
-			) {
+		try (var rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
 			String jsonText = readAll(rd);
 			return new JSONObject(jsonText);
 		} finally {
@@ -79,7 +75,7 @@ public class Utilities {
 	    	throw new IllegalArgumentException();
 	    }
 
-	    BigDecimal bd = BigDecimal.valueOf(value);
+	    var bd = BigDecimal.valueOf(value);
 	    bd = bd.setScale(places, RoundingMode.HALF_UP);
 	    return bd.doubleValue();
 	}
