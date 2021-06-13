@@ -36,13 +36,13 @@ public class Main {
 	private static String repo = "D:/Projects/EclipseProjects/DeliverableFinal/" + projName + "/.git";
 	
 	private static List<Release> releases;
-	private static List<Ticket> tickets;
 	private static List<RevCommit> commits;
-	private static Map<String, List<String>> fileMap;
-	
 	private static List<EvalEntry> entries;
 
 	public static void main(String[] args) throws IOException {
+		
+		List<Ticket> tickets = null;
+		Map<String, List<String>> fileMap = null;
 		
 		// Start program
 		Utilities.logMsg("Starting program\n");
