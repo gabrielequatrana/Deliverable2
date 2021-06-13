@@ -3,27 +3,24 @@ package it.isw2;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.json.JSONException;
 
-import it.isw2.entity.Ticket;
 import it.isw2.control.CommitController;
 import it.isw2.control.JavaFileController;
-import it.isw2.control.ReleaseController;
-import it.isw2.control.TicketController;
 import it.isw2.control.MetricsController;
 import it.isw2.control.ProportionController;
+import it.isw2.control.ReleaseController;
+import it.isw2.control.TicketController;
 import it.isw2.entity.EvalEntry;
 import it.isw2.entity.Release;
+import it.isw2.entity.Ticket;
 import it.isw2.utility.CSVWriter;
 import it.isw2.utility.Utilities;
 import it.isw2.weka.CsvToArff;
@@ -33,7 +30,7 @@ public class Main {
 	
 	// Select BOOKKEEPER or TAJO
 	private static String projName = "BOOKKEEPER";
-	private static String repo = "D:/Projects/EclipseProjects/DeliverableFinal/" + projName + "/.git";
+	private static String repo = "D:/Projects/EclipseProjects/Deliverable2/" + projName + "/.git";
 	
 	private static List<Release> releases;
 	private static List<RevCommit> commits;
@@ -50,7 +47,8 @@ public class Main {
 		// Clone selected repository
 		Utilities.logMsg("Cloning repository\n");
 		try {
-			cloneProject(projName);
+			var path = Paths.get("D:/Projects/EclipseProjects/Deliverable2/" + projName);
+			if (!Files.exists(path)) cloneProject(projName);
 		} catch (GitAPIException e) {
 			Utilities.logError(e);
 		}
@@ -156,30 +154,13 @@ public class Main {
 			Utilities.logError(e);
 		}
 		
-		// Delete project dir
-		Utilities.logMsg("Deleting project dir\n");
-		try {
-			deleteDir(new File("D:/Projects/EclipseProjects/DeliverableFinal/" + projName));
-		} catch (IOException e) {
-			Utilities.logError(e);
-		}
-		
 		// Stop program
 		Utilities.logMsg("Stopping program\n");
 	}
 	
 	private static void cloneProject(String projName) throws GitAPIException {
 		String url = "https://github.com/apache/" + projName;
-		Git.cloneRepository().setURI(url).call();
-	}
-	
-	private static void deleteDir(File directory) throws IOException {
-		var rootPath = Paths.get(directory.getAbsolutePath());
-		try (Stream<Path> walk = Files.walk(rootPath)) {
-		    walk.sorted(Comparator.reverseOrder())
-		        .map(Path::toFile)
-		        .forEach(File::delete);
-		}
-		Files.delete(directory.toPath());
+		Git git = Git.cloneRepository().setURI(url).call();
+		git.close();
 	}
 }
