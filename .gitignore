@@ -1,0 +1,8 @@
+/bin
+/lib
+/out
+/BOOKKEEPER
+/TAJO
+/.settings
+/.classpath
+/.project
