@@ -197,33 +197,32 @@ public class Evaluator {
 			evalIBK = new Evaluation(testing, csIBK.getCostMatrix());
 			evalIBK.evaluateModel(csIBK, testing);
 		}
-		// TODO VEDERE SE VA 1 (YES?) o 0 (NO?)
 
 		entryRF.setTP((int) evalRF.numTruePositives(0));
 		entryRF.setFP((int) evalRF.numFalsePositives(0));
 		entryRF.setTN((int) evalRF.numTrueNegatives(0));
 		entryRF.setFN((int) evalRF.numFalseNegatives(0));
-		entryRF.setPrecision(Utilities.round(evalRF.precision(0), 2));
-		entryRF.setRecall(Utilities.round(evalRF.precision(0), 2));
-		entryRF.setAuc(Utilities.round(evalRF.areaUnderROC(0), 2));
+		entryRF.setPrecision(Utilities.round(evalRF.precision(1), 2));
+		entryRF.setRecall(Utilities.round(evalRF.precision(1), 2));
+		entryRF.setAuc(Utilities.round(evalRF.areaUnderROC(1), 2));
 		entryRF.setKappa(Utilities.round(evalRF.kappa(), 2));
 
 		entryNB.setTP((int) evalNB.numTruePositives(0));
 		entryNB.setFP((int) evalNB.numFalsePositives(0));
 		entryNB.setTN((int) evalNB.numTrueNegatives(0));
 		entryNB.setFN((int) evalNB.numFalseNegatives(0));
-		entryNB.setPrecision(Utilities.round(evalNB.precision(0), 2));
-		entryNB.setRecall(Utilities.round(evalNB.precision(0), 2));
-		entryNB.setAuc(Utilities.round(evalNB.areaUnderROC(0), 2));
+		entryNB.setPrecision(Utilities.round(evalNB.precision(1), 2));
+		entryNB.setRecall(Utilities.round(evalNB.precision(1), 2));
+		entryNB.setAuc(Utilities.round(evalNB.areaUnderROC(1), 2));
 		entryNB.setKappa(Utilities.round(evalNB.kappa(), 2));
 
 		entryIBK.setTP((int) evalIBK.numTruePositives(0));
 		entryIBK.setFP((int) evalIBK.numFalsePositives(0));
 		entryIBK.setTN((int) evalIBK.numTrueNegatives(0));
 		entryIBK.setFN((int) evalIBK.numFalseNegatives(0));
-		entryIBK.setPrecision(Utilities.round(evalIBK.precision(0), 2));
-		entryIBK.setRecall(Utilities.round(evalIBK.precision(0), 2));
-		entryIBK.setAuc(Utilities.round(evalIBK.areaUnderROC(0), 2));
+		entryIBK.setPrecision(Utilities.round(evalIBK.precision(1), 2));
+		entryIBK.setRecall(Utilities.round(evalIBK.precision(1), 2));
+		entryIBK.setAuc(Utilities.round(evalIBK.areaUnderROC(1), 2));
 		entryIBK.setKappa(Utilities.round(evalIBK.kappa(), 2));
 
 		entries.add(entryRF);

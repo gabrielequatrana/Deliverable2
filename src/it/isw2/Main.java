@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -13,9 +12,7 @@ import java.util.stream.Stream;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.treewalk.TreeWalk;
 import org.json.JSONException;
 
 import it.isw2.entity.Ticket;
@@ -49,14 +46,14 @@ public class Main {
 		
 		// Start program
 		Utilities.logMsg("Starting program\n");
-/*
+
 		// Clone selected repository
 		Utilities.logMsg("Cloning repository\n");
 		try {
 			cloneProject(projName);
 		} catch (GitAPIException e) {
 			Utilities.logError(e);
-		}*/
+		}
 		
 		// Get all project releases
 		Utilities.logMsg("Getting releases informations\n");
@@ -73,12 +70,6 @@ public class Main {
 		} catch (GitAPIException | IOException e) {
 			Utilities.logError(e);
 		}
-		
-		/*
-		// Reverse commit order
-		for (Release release : releases) {
-			Collections.reverse(release.getCommits());
-		}*/
 		
 		// Get all project tickets with at least one associated commit
 		Utilities.logMsg("Getting tickets informations\n");
@@ -164,14 +155,14 @@ public class Main {
 		} catch (IOException e) {
 			Utilities.logError(e);
 		}
-		/*
+		
 		// Delete project dir
 		Utilities.logMsg("Deleting project dir\n");
 		try {
 			deleteDir(new File("D:/Projects/EclipseProjects/DeliverableFinal/" + projName));
 		} catch (IOException e) {
 			Utilities.logError(e);
-		}*/
+		}
 		
 		// Stop program
 		Utilities.logMsg("Stopping program\n");

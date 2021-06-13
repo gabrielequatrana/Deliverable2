@@ -29,9 +29,6 @@ public class CommitController {
 			Iterable<RevCommit> logs = git.log().all().call();
 			for (RevCommit commit : logs) {
 				commits.add(commit);
-				/*LocalDateTime commitDate = commit.getAuthorIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-				int releaseCommit = compareDateRelease(commitDate, releases);
-				addCommitToRelease(releaseCommit, releases, commit);	*/
 			}
 		}
 		
@@ -104,14 +101,6 @@ public class CommitController {
 			Ticket t = ticket.next();
 			if (t.getResolutionDate() == null) {
 				ticket.remove();
-			}
-		}
-	}
-		
-	private static void addCommitToRelease(int releaseCommit, List<Release> releases, RevCommit commit) {
-		for (Release release : releases) {
-			if (release.getIndex().equals(releaseCommit)) {
-				release.getCommits().add(commit);
 			}
 		}
 	}	

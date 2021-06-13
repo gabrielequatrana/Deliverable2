@@ -77,22 +77,6 @@ public class JavaFileController {
 						addFile(treeWalk, release, fileNames, fileMap);
 					}
 				}
-				
-				
-				/*for (RevCommit commit : release.getCommits()) {
-					//ObjectId treeId = commit.getTree();
-					try (TreeWalk treeWalk = new TreeWalk(git.getRepository())) {
-						treeWalk.reset(treeId);
-						treeWalk.setRecursive(true);
-						
-						while (treeWalk.next()) {
-							addFile(treeWalk, release, fileNames, fileMap);
-						}
-						
-					} catch (IOException e) {
-						Utilities.logError(e);
-					}
-				}*/
 			}
 		}
 		
