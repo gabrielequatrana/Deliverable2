@@ -1,0 +1,289 @@
+Dataset,#TrainingRelease,%Training,%Defective_in_training,%Defective_in_testing,Classifier,Balancing,Feature_Selection,Sensitivity,TP,FP,TN,FN,Precision,Recall,AUC,Kappa
+TAJO,1,11.76%,6.05%,12.8%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,164,279,474,40,0.37,0.37,0.81,0.3
+TAJO,1,11.76%,6.05%,12.8%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,169,400,353,35,0.3,0.3,0.78,0.18
+TAJO,1,11.76%,6.05%,12.8%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,131,429,324,73,0.23,0.23,0.54,0.04
+TAJO,1,11.76%,6.05%,12.8%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,204,753,0,0,0.21,0.21,0.83,0.0
+TAJO,1,11.76%,6.05%,12.8%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,197,657,96,7,0.23,0.23,0.79,0.04
+TAJO,1,11.76%,6.05%,12.8%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,133,432,321,71,0.24,0.24,0.54,0.05
+TAJO,1,11.76%,6.05%,12.8%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,204,753,0,0,0.21,0.21,0.83,0.0
+TAJO,1,11.76%,6.05%,12.8%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,197,657,96,7,0.23,0.23,0.79,0.04
+TAJO,1,11.76%,6.05%,12.8%,IBk,No Sampling,No Feature Selection,Sensitive Learning,133,432,321,71,0.24,0.24,0.54,0.05
+TAJO,1,11.76%,6.05%,12.8%,RandomForest,No Sampling,Best First,No Cost Sensitive,116,2,751,88,0.98,0.98,0.77,0.67
+TAJO,1,11.76%,6.05%,12.8%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,116,2,751,88,0.98,0.98,0.77,0.67
+TAJO,1,11.76%,6.05%,12.8%,IBk,No Sampling,Best First,No Cost Sensitive,116,2,751,88,0.98,0.98,0.77,0.67
+TAJO,1,11.76%,6.05%,12.8%,RandomForest,No Sampling,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.76%,6.05%,12.8%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.76%,6.05%,12.8%,IBk,No Sampling,Best First,Sensitive Threshold,192,683,70,12,0.22,0.22,0.77,0.02
+TAJO,1,11.76%,6.05%,12.8%,RandomForest,No Sampling,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.76%,6.05%,12.8%,NaiveBayes,No Sampling,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.76%,6.05%,12.8%,IBk,No Sampling,Best First,Sensitive Learning,192,683,70,12,0.22,0.22,0.77,0.02
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,152,281,472,52,0.35,0.35,0.77,0.26
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,88,73,680,116,0.55,0.55,0.74,0.36
+TAJO,1,12.1%,6.05%,12.8%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,114,417,336,90,0.21,0.21,0.48,0.0
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,204,752,1,0,0.21,0.21,0.75,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,186,602,151,18,0.24,0.24,0.74,0.05
+TAJO,1,12.1%,6.05%,12.8%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,115,421,332,89,0.21,0.21,0.48,0.0
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,204,752,1,0,0.21,0.21,0.75,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,186,602,151,18,0.24,0.24,0.74,0.05
+TAJO,1,12.1%,6.05%,12.8%,IBk,Oversampling,No Feature Selection,Sensitive Learning,115,421,332,89,0.21,0.21,0.48,0.0
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,Oversampling,Best First,No Cost Sensitive,78,2,751,126,0.98,0.98,0.69,0.49
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,196,703,50,8,0.22,0.22,0.69,0.01
+TAJO,1,12.1%,6.05%,12.8%,IBk,Oversampling,Best First,No Cost Sensitive,196,703,50,8,0.22,0.22,0.69,0.01
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,Oversampling,Best First,Sensitive Threshold,203,748,5,1,0.21,0.21,0.69,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.69,0.0
+TAJO,1,12.1%,6.05%,12.8%,IBk,Oversampling,Best First,Sensitive Threshold,196,703,50,8,0.22,0.22,0.69,0.01
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,Oversampling,Best First,Sensitive Learning,203,748,5,1,0.21,0.21,0.69,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,Oversampling,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.69,0.0
+TAJO,1,12.1%,6.05%,12.8%,IBk,Oversampling,Best First,Sensitive Learning,196,703,50,8,0.22,0.22,0.69,0.01
+TAJO,1,11.42%,5.71%,12.8%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,164,353,400,40,0.32,0.32,0.81,0.21
+TAJO,1,11.42%,5.71%,12.8%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,159,307,446,45,0.34,0.34,0.77,0.25
+TAJO,1,11.42%,5.71%,12.8%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,131,434,319,73,0.23,0.23,0.54,0.04
+TAJO,1,11.42%,5.71%,12.8%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,204,753,0,0,0.21,0.21,0.79,0.0
+TAJO,1,11.42%,5.71%,12.8%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,193,650,103,11,0.23,0.23,0.78,0.04
+TAJO,1,11.42%,5.71%,12.8%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,133,437,316,71,0.23,0.23,0.54,0.04
+TAJO,1,11.42%,5.71%,12.8%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,204,753,0,0,0.21,0.21,0.79,0.0
+TAJO,1,11.42%,5.71%,12.8%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,193,650,103,11,0.23,0.23,0.78,0.04
+TAJO,1,11.42%,5.71%,12.8%,IBk,Undersampling,No Feature Selection,Sensitive Learning,133,437,316,71,0.23,0.23,0.54,0.04
+TAJO,1,11.42%,5.71%,12.8%,RandomForest,Undersampling,Best First,No Cost Sensitive,116,2,751,88,0.98,0.98,0.77,0.67
+TAJO,1,11.42%,5.71%,12.8%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,192,690,63,12,0.22,0.22,0.77,0.01
+TAJO,1,11.42%,5.71%,12.8%,IBk,Undersampling,Best First,No Cost Sensitive,192,690,63,12,0.22,0.22,0.77,0.01
+TAJO,1,11.42%,5.71%,12.8%,RandomForest,Undersampling,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.42%,5.71%,12.8%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.42%,5.71%,12.8%,IBk,Undersampling,Best First,Sensitive Threshold,192,690,63,12,0.22,0.22,0.77,0.01
+TAJO,1,11.42%,5.71%,12.8%,RandomForest,Undersampling,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.42%,5.71%,12.8%,NaiveBayes,Undersampling,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,11.42%,5.71%,12.8%,IBk,Undersampling,Best First,Sensitive Learning,192,690,63,12,0.22,0.22,0.77,0.01
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,165,358,395,39,0.32,0.32,0.8,0.21
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,171,419,334,33,0.29,0.29,0.78,0.17
+TAJO,1,12.1%,6.05%,12.8%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,131,429,324,73,0.23,0.23,0.54,0.04
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,197,655,98,7,0.23,0.23,0.79,0.04
+TAJO,1,12.1%,6.05%,12.8%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,133,432,321,71,0.24,0.24,0.54,0.05
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,197,655,98,7,0.23,0.23,0.79,0.04
+TAJO,1,12.1%,6.05%,12.8%,IBk,SMOTE,No Feature Selection,Sensitive Learning,133,432,321,71,0.24,0.24,0.54,0.05
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,SMOTE,Best First,No Cost Sensitive,116,2,751,88,0.98,0.98,0.77,0.67
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,192,683,70,12,0.22,0.22,0.77,0.02
+TAJO,1,12.1%,6.05%,12.8%,IBk,SMOTE,Best First,No Cost Sensitive,192,683,70,12,0.22,0.22,0.77,0.02
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,SMOTE,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,12.1%,6.05%,12.8%,IBk,SMOTE,Best First,Sensitive Threshold,192,683,70,12,0.22,0.22,0.77,0.02
+TAJO,1,12.1%,6.05%,12.8%,RandomForest,SMOTE,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,12.1%,6.05%,12.8%,NaiveBayes,SMOTE,Best First,Sensitive Learning,204,753,0,0,0.21,0.21,0.77,0.0
+TAJO,1,12.1%,6.05%,12.8%,IBk,SMOTE,Best First,Sensitive Learning,192,683,70,12,0.22,0.22,0.77,0.02
+TAJO,2,28.03%,18.85%,14.14%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,192,16,816,233,0.92,0.92,0.94,0.49
+TAJO,2,28.03%,18.85%,14.14%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,66,16,816,359,0.8,0.8,0.79,0.17
+TAJO,2,28.03%,18.85%,14.14%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,244,43,789,181,0.85,0.85,0.76,0.57
+TAJO,2,28.03%,18.85%,14.14%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,424,802,30,1,0.35,0.35,0.91,0.02
+TAJO,2,28.03%,18.85%,14.14%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,303,404,428,122,0.43,0.43,0.78,0.2
+TAJO,2,28.03%,18.85%,14.14%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,244,46,786,181,0.84,0.84,0.76,0.56
+TAJO,2,28.03%,18.85%,14.14%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,424,802,30,1,0.35,0.35,0.91,0.02
+TAJO,2,28.03%,18.85%,14.14%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,303,404,428,122,0.43,0.43,0.78,0.2
+TAJO,2,28.03%,18.85%,14.14%,IBk,No Sampling,No Feature Selection,Sensitive Learning,244,46,786,181,0.84,0.84,0.76,0.56
+TAJO,2,28.03%,18.85%,14.14%,RandomForest,No Sampling,Best First,No Cost Sensitive,190,2,830,235,0.99,0.99,0.96,0.51
+TAJO,2,28.03%,18.85%,14.14%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,247,53,779,178,0.82,0.82,0.93,0.56
+TAJO,2,28.03%,18.85%,14.14%,IBk,No Sampling,Best First,No Cost Sensitive,252,46,786,173,0.85,0.85,0.77,0.58
+TAJO,2,28.03%,18.85%,14.14%,RandomForest,No Sampling,Best First,Sensitive Threshold,425,801,31,0,0.35,0.35,0.96,0.03
+TAJO,2,28.03%,18.85%,14.14%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,424,805,27,1,0.34,0.34,0.75,0.02
+TAJO,2,28.03%,18.85%,14.14%,IBk,No Sampling,Best First,Sensitive Threshold,260,54,778,165,0.83,0.83,0.77,0.58
+TAJO,2,28.03%,18.85%,14.14%,RandomForest,No Sampling,Best First,Sensitive Learning,425,801,31,0,0.35,0.35,0.96,0.03
+TAJO,2,28.03%,18.85%,14.14%,NaiveBayes,No Sampling,Best First,Sensitive Learning,424,805,27,1,0.34,0.34,0.75,0.02
+TAJO,2,28.03%,18.85%,14.14%,IBk,No Sampling,Best First,Sensitive Learning,260,54,778,165,0.83,0.83,0.77,0.58
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,396,135,697,29,0.75,0.75,0.94,0.73
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,122,25,807,303,0.83,0.83,0.84,0.31
+TAJO,2,37.7%,18.85%,14.14%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,242,165,667,183,0.59,0.59,0.7,0.37
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,424,810,22,1,0.34,0.34,0.82,0.02
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,315,102,730,110,0.76,0.76,0.82,0.62
+TAJO,2,37.7%,18.85%,14.14%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,243,182,650,182,0.57,0.57,0.7,0.35
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,424,810,22,1,0.34,0.34,0.82,0.02
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,315,102,730,110,0.76,0.76,0.82,0.62
+TAJO,2,37.7%,18.85%,14.14%,IBk,Oversampling,No Feature Selection,Sensitive Learning,243,182,650,182,0.57,0.57,0.7,0.35
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,Oversampling,Best First,No Cost Sensitive,176,2,830,249,0.99,0.99,0.87,0.48
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,407,300,532,18,0.58,0.58,0.85,0.51
+TAJO,2,37.7%,18.85%,14.14%,IBk,Oversampling,Best First,No Cost Sensitive,252,140,692,173,0.64,0.64,0.74,0.43
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,Oversampling,Best First,Sensitive Threshold,425,801,31,0,0.35,0.35,0.87,0.03
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,424,821,11,1,0.34,0.34,0.76,0.01
+TAJO,2,37.7%,18.85%,14.14%,IBk,Oversampling,Best First,Sensitive Threshold,263,249,583,162,0.51,0.51,0.74,0.3
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,Oversampling,Best First,Sensitive Learning,425,801,31,0,0.35,0.35,0.87,0.03
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,Oversampling,Best First,Sensitive Learning,424,821,11,1,0.34,0.34,0.76,0.01
+TAJO,2,37.7%,18.85%,14.14%,IBk,Oversampling,Best First,Sensitive Learning,263,249,583,162,0.51,0.51,0.74,0.3
+TAJO,2,18.35%,9.18%,14.14%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,286,128,704,139,0.69,0.69,0.87,0.52
+TAJO,2,18.35%,9.18%,14.14%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,139,21,811,286,0.87,0.87,0.76,0.36
+TAJO,2,18.35%,9.18%,14.14%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,249,251,581,176,0.5,0.5,0.65,0.27
+TAJO,2,18.35%,9.18%,14.14%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,424,820,12,1,0.34,0.34,0.73,0.01
+TAJO,2,18.35%,9.18%,14.14%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,333,552,280,92,0.38,0.38,0.75,0.09
+TAJO,2,18.35%,9.18%,14.14%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,249,274,558,176,0.48,0.48,0.65,0.24
+TAJO,2,18.35%,9.18%,14.14%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,424,820,12,1,0.34,0.34,0.73,0.01
+TAJO,2,18.35%,9.18%,14.14%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,333,552,280,92,0.38,0.38,0.75,0.09
+TAJO,2,18.35%,9.18%,14.14%,IBk,Undersampling,No Feature Selection,Sensitive Learning,249,274,558,176,0.48,0.48,0.65,0.24
+TAJO,2,18.35%,9.18%,14.14%,RandomForest,Undersampling,Best First,No Cost Sensitive,191,2,830,234,0.99,0.99,0.84,0.52
+TAJO,2,18.35%,9.18%,14.14%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,404,401,431,21,0.5,0.5,0.8,0.38
+TAJO,2,18.35%,9.18%,14.14%,IBk,Undersampling,Best First,No Cost Sensitive,380,356,476,45,0.52,0.52,0.81,0.4
+TAJO,2,18.35%,9.18%,14.14%,RandomForest,Undersampling,Best First,Sensitive Threshold,425,832,0,0,0.34,0.34,0.84,0.0
+TAJO,2,18.35%,9.18%,14.14%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,424,823,9,1,0.34,0.34,0.7,0.01
+TAJO,2,18.35%,9.18%,14.14%,IBk,Undersampling,Best First,Sensitive Threshold,387,360,472,38,0.52,0.52,0.81,0.4
+TAJO,2,18.35%,9.18%,14.14%,RandomForest,Undersampling,Best First,Sensitive Learning,425,832,0,0,0.34,0.34,0.84,0.0
+TAJO,2,18.35%,9.18%,14.14%,NaiveBayes,Undersampling,Best First,Sensitive Learning,424,823,9,1,0.34,0.34,0.7,0.01
+TAJO,2,18.35%,9.18%,14.14%,IBk,Undersampling,Best First,Sensitive Learning,387,360,472,38,0.52,0.52,0.81,0.4
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,371,60,772,54,0.86,0.86,0.96,0.8
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,130,11,821,295,0.92,0.92,0.73,0.35
+TAJO,2,37.7%,18.85%,14.14%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,245,46,786,180,0.84,0.84,0.76,0.56
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,424,819,13,1,0.34,0.34,0.92,0.01
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,281,525,307,144,0.35,0.35,0.7,0.02
+TAJO,2,37.7%,18.85%,14.14%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,245,48,784,180,0.84,0.84,0.76,0.56
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,424,819,13,1,0.34,0.34,0.92,0.01
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,281,525,307,144,0.35,0.35,0.7,0.02
+TAJO,2,37.7%,18.85%,14.14%,IBk,SMOTE,No Feature Selection,Sensitive Learning,245,48,784,180,0.84,0.84,0.76,0.56
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,SMOTE,Best First,No Cost Sensitive,414,110,722,11,0.79,0.79,0.95,0.8
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,281,96,736,144,0.75,0.75,0.92,0.56
+TAJO,2,37.7%,18.85%,14.14%,IBk,SMOTE,Best First,No Cost Sensitive,247,42,790,178,0.85,0.85,0.76,0.58
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,SMOTE,Best First,Sensitive Threshold,425,831,1,0,0.34,0.34,0.96,0.0
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,424,820,12,1,0.34,0.34,0.71,0.01
+TAJO,2,37.7%,18.85%,14.14%,IBk,SMOTE,Best First,Sensitive Threshold,247,49,783,178,0.83,0.83,0.76,0.56
+TAJO,2,37.7%,18.85%,14.14%,RandomForest,SMOTE,Best First,Sensitive Learning,425,831,1,0,0.34,0.34,0.96,0.0
+TAJO,2,37.7%,18.85%,14.14%,NaiveBayes,SMOTE,Best First,Sensitive Learning,424,820,12,1,0.34,0.34,0.71,0.01
+TAJO,2,37.7%,18.85%,14.14%,IBk,SMOTE,Best First,Sensitive Learning,247,49,783,178,0.83,0.83,0.76,0.56
+TAJO,3,49.39%,32.99%,15.47%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,177,0,910,306,1.0,1.0,0.98,0.43
+TAJO,3,49.39%,32.99%,15.47%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,16,21,889,467,0.43,0.43,0.9,0.01
+TAJO,3,49.39%,32.99%,15.47%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,383,80,830,100,0.83,0.83,0.86,0.71
+TAJO,3,49.39%,32.99%,15.47%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,483,694,216,0,0.41,0.41,0.95,0.18
+TAJO,3,49.39%,32.99%,15.47%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,19,30,880,464,0.39,0.39,0.91,0.01
+TAJO,3,49.39%,32.99%,15.47%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,385,82,828,98,0.82,0.82,0.86,0.71
+TAJO,3,49.39%,32.99%,15.47%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,483,694,216,0,0.41,0.41,0.95,0.18
+TAJO,3,49.39%,32.99%,15.47%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,19,30,880,464,0.39,0.39,0.91,0.01
+TAJO,3,49.39%,32.99%,15.47%,IBk,No Sampling,No Feature Selection,Sensitive Learning,385,82,828,98,0.82,0.82,0.86,0.71
+TAJO,3,49.39%,32.99%,15.47%,RandomForest,No Sampling,Best First,No Cost Sensitive,335,2,908,148,0.99,0.99,0.92,0.74
+TAJO,3,49.39%,32.99%,15.47%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,323,2,908,160,0.99,0.99,0.92,0.72
+TAJO,3,49.39%,32.99%,15.47%,IBk,No Sampling,Best First,No Cost Sensitive,336,2,908,147,0.99,0.99,0.92,0.75
+TAJO,3,49.39%,32.99%,15.47%,RandomForest,No Sampling,Best First,Sensitive Threshold,483,660,250,0,0.42,0.42,0.92,0.21
+TAJO,3,49.39%,32.99%,15.47%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,483,910,0,0,0.35,0.35,0.92,0.0
+TAJO,3,49.39%,32.99%,15.47%,IBk,No Sampling,Best First,Sensitive Threshold,480,440,470,3,0.52,0.52,0.92,0.42
+TAJO,3,49.39%,32.99%,15.47%,RandomForest,No Sampling,Best First,Sensitive Learning,483,660,250,0,0.42,0.42,0.92,0.21
+TAJO,3,49.39%,32.99%,15.47%,NaiveBayes,No Sampling,Best First,Sensitive Learning,483,910,0,0,0.35,0.35,0.92,0.0
+TAJO,3,49.39%,32.99%,15.47%,IBk,No Sampling,Best First,Sensitive Learning,480,440,470,3,0.52,0.52,0.92,0.42
+TAJO,3,65.98%,32.99%,15.47%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,442,80,830,41,0.85,0.85,0.96,0.81
+TAJO,3,65.98%,32.99%,15.47%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,17,26,884,466,0.4,0.4,0.9,0.01
+TAJO,3,65.98%,32.99%,15.47%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,372,110,800,111,0.77,0.77,0.8,0.65
+TAJO,3,65.98%,32.99%,15.47%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,483,816,94,0,0.37,0.37,0.91,0.07
+TAJO,3,65.98%,32.99%,15.47%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,23,31,879,460,0.43,0.43,0.89,0.02
+TAJO,3,65.98%,32.99%,15.47%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,375,118,792,108,0.76,0.76,0.8,0.64
+TAJO,3,65.98%,32.99%,15.47%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,483,816,94,0,0.37,0.37,0.91,0.07
+TAJO,3,65.98%,32.99%,15.47%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,23,31,879,460,0.43,0.43,0.89,0.02
+TAJO,3,65.98%,32.99%,15.47%,IBk,Oversampling,No Feature Selection,Sensitive Learning,375,118,792,108,0.76,0.76,0.8,0.64
+TAJO,3,65.98%,32.99%,15.47%,RandomForest,Oversampling,Best First,No Cost Sensitive,306,2,908,177,0.99,0.99,0.9,0.69
+TAJO,3,65.98%,32.99%,15.47%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,482,505,405,1,0.49,0.49,0.9,0.36
+TAJO,3,65.98%,32.99%,15.47%,IBk,Oversampling,Best First,No Cost Sensitive,482,505,405,1,0.49,0.49,0.9,0.36
+TAJO,3,65.98%,32.99%,15.47%,RandomForest,Oversampling,Best First,Sensitive Threshold,483,813,97,0,0.37,0.37,0.9,0.08
+TAJO,3,65.98%,32.99%,15.47%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,483,910,0,0,0.35,0.35,0.9,0.0
+TAJO,3,65.98%,32.99%,15.47%,IBk,Oversampling,Best First,Sensitive Threshold,482,505,405,1,0.49,0.49,0.9,0.36
+TAJO,3,65.98%,32.99%,15.47%,RandomForest,Oversampling,Best First,Sensitive Learning,483,813,97,0,0.37,0.37,0.9,0.08
+TAJO,3,65.98%,32.99%,15.47%,NaiveBayes,Oversampling,Best First,Sensitive Learning,483,910,0,0,0.35,0.35,0.9,0.0
+TAJO,3,65.98%,32.99%,15.47%,IBk,Oversampling,Best First,Sensitive Learning,482,505,405,1,0.49,0.49,0.9,0.36
+TAJO,3,32.8%,16.4%,15.47%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,439,77,833,44,0.85,0.85,0.96,0.81
+TAJO,3,32.8%,16.4%,15.47%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,18,25,885,465,0.42,0.42,0.89,0.01
+TAJO,3,32.8%,16.4%,15.47%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,422,191,719,61,0.69,0.69,0.83,0.62
+TAJO,3,32.8%,16.4%,15.47%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,483,869,41,0,0.36,0.36,0.92,0.03
+TAJO,3,32.8%,16.4%,15.47%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,22,33,877,461,0.4,0.4,0.89,0.01
+TAJO,3,32.8%,16.4%,15.47%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,422,204,706,61,0.67,0.67,0.83,0.61
+TAJO,3,32.8%,16.4%,15.47%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,483,869,41,0,0.36,0.36,0.92,0.03
+TAJO,3,32.8%,16.4%,15.47%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,22,33,877,461,0.4,0.4,0.89,0.01
+TAJO,3,32.8%,16.4%,15.47%,IBk,Undersampling,No Feature Selection,Sensitive Learning,422,204,706,61,0.67,0.67,0.83,0.61
+TAJO,3,32.8%,16.4%,15.47%,RandomForest,Undersampling,Best First,No Cost Sensitive,336,2,908,147,0.99,0.99,0.9,0.75
+TAJO,3,32.8%,16.4%,15.47%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,479,554,356,4,0.46,0.46,0.9,0.3
+TAJO,3,32.8%,16.4%,15.47%,IBk,Undersampling,Best First,No Cost Sensitive,479,554,356,4,0.46,0.46,0.9,0.3
+TAJO,3,32.8%,16.4%,15.47%,RandomForest,Undersampling,Best First,Sensitive Threshold,483,908,2,0,0.35,0.35,0.9,0.0
+TAJO,3,32.8%,16.4%,15.47%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,483,910,0,0,0.35,0.35,0.9,0.0
+TAJO,3,32.8%,16.4%,15.47%,IBk,Undersampling,Best First,Sensitive Threshold,480,555,355,3,0.46,0.46,0.9,0.3
+TAJO,3,32.8%,16.4%,15.47%,RandomForest,Undersampling,Best First,Sensitive Learning,483,908,2,0,0.35,0.35,0.9,0.0
+TAJO,3,32.8%,16.4%,15.47%,NaiveBayes,Undersampling,Best First,Sensitive Learning,483,910,0,0,0.35,0.35,0.9,0.0
+TAJO,3,32.8%,16.4%,15.47%,IBk,Undersampling,Best First,Sensitive Learning,480,555,355,3,0.46,0.46,0.9,0.3
+TAJO,3,65.96%,32.99%,15.47%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,458,72,838,25,0.86,0.86,0.97,0.85
+TAJO,3,65.96%,32.99%,15.47%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,16,24,886,467,0.4,0.4,0.91,0.01
+TAJO,3,65.96%,32.99%,15.47%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,387,100,810,96,0.79,0.79,0.85,0.69
+TAJO,3,65.96%,32.99%,15.47%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,483,853,57,0,0.36,0.36,0.95,0.04
+TAJO,3,65.96%,32.99%,15.47%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,54,31,879,429,0.64,0.64,0.9,0.1
+TAJO,3,65.96%,32.99%,15.47%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,389,101,809,94,0.79,0.79,0.85,0.69
+TAJO,3,65.96%,32.99%,15.47%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,483,853,57,0,0.36,0.36,0.95,0.04
+TAJO,3,65.96%,32.99%,15.47%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,54,31,879,429,0.64,0.64,0.9,0.1
+TAJO,3,65.96%,32.99%,15.47%,IBk,SMOTE,No Feature Selection,Sensitive Learning,389,101,809,94,0.79,0.79,0.85,0.69
+TAJO,3,65.96%,32.99%,15.47%,RandomForest,SMOTE,Best First,No Cost Sensitive,477,439,471,6,0.52,0.52,0.92,0.42
+TAJO,3,65.96%,32.99%,15.47%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,335,2,908,148,0.99,0.99,0.92,0.74
+TAJO,3,65.96%,32.99%,15.47%,IBk,SMOTE,Best First,No Cost Sensitive,336,2,908,147,0.99,0.99,0.92,0.75
+TAJO,3,65.96%,32.99%,15.47%,RandomForest,SMOTE,Best First,Sensitive Threshold,483,889,21,0,0.35,0.35,0.92,0.02
+TAJO,3,65.96%,32.99%,15.47%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,483,910,0,0,0.35,0.35,0.92,0.0
+TAJO,3,65.96%,32.99%,15.47%,IBk,SMOTE,Best First,Sensitive Threshold,480,440,470,3,0.52,0.52,0.92,0.42
+TAJO,3,65.96%,32.99%,15.47%,RandomForest,SMOTE,Best First,Sensitive Learning,483,889,21,0,0.35,0.35,0.92,0.02
+TAJO,3,65.96%,32.99%,15.47%,NaiveBayes,SMOTE,Best First,Sensitive Learning,483,910,0,0,0.35,0.35,0.92,0.0
+TAJO,3,65.96%,32.99%,15.47%,IBk,SMOTE,Best First,Sensitive Learning,480,440,470,3,0.52,0.52,0.92,0.42
+TAJO,4,73.06%,48.45%,16.11%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,529,15,933,108,0.97,0.97,0.99,0.83
+TAJO,4,73.06%,48.45%,16.11%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,28,33,915,609,0.46,0.46,0.92,0.01
+TAJO,4,73.06%,48.45%,16.11%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,586,40,908,51,0.94,0.94,0.93,0.88
+TAJO,4,73.06%,48.45%,16.11%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,637,774,174,0,0.45,0.45,0.99,0.15
+TAJO,4,73.06%,48.45%,16.11%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,319,40,908,318,0.89,0.89,0.9,0.49
+TAJO,4,73.06%,48.45%,16.11%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,588,40,908,49,0.94,0.94,0.93,0.88
+TAJO,4,73.06%,48.45%,16.11%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,637,774,174,0,0.45,0.45,0.99,0.15
+TAJO,4,73.06%,48.45%,16.11%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,319,40,908,318,0.89,0.89,0.9,0.49
+TAJO,4,73.06%,48.45%,16.11%,IBk,No Sampling,No Feature Selection,Sensitive Learning,588,40,908,49,0.94,0.94,0.93,0.88
+TAJO,4,73.06%,48.45%,16.11%,RandomForest,No Sampling,Best First,No Cost Sensitive,478,2,946,159,1.0,1.0,0.98,0.78
+TAJO,4,73.06%,48.45%,16.11%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,475,1,947,162,1.0,1.0,0.98,0.78
+TAJO,4,73.06%,48.45%,16.11%,IBk,No Sampling,Best First,No Cost Sensitive,480,2,946,157,1.0,1.0,0.98,0.78
+TAJO,4,73.06%,48.45%,16.11%,RandomForest,No Sampling,Best First,Sensitive Threshold,637,544,404,0,0.54,0.54,0.99,0.37
+TAJO,4,73.06%,48.45%,16.11%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,637,948,0,0,0.4,0.4,0.98,0.0
+TAJO,4,73.06%,48.45%,16.11%,IBk,No Sampling,Best First,Sensitive Threshold,631,94,854,6,0.87,0.87,0.98,0.87
+TAJO,4,73.06%,48.45%,16.11%,RandomForest,No Sampling,Best First,Sensitive Learning,637,544,404,0,0.54,0.54,0.99,0.37
+TAJO,4,73.06%,48.45%,16.11%,NaiveBayes,No Sampling,Best First,Sensitive Learning,637,948,0,0,0.4,0.4,0.98,0.0
+TAJO,4,73.06%,48.45%,16.11%,IBk,No Sampling,Best First,Sensitive Learning,631,94,854,6,0.87,0.87,0.98,0.87
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,626,172,776,11,0.78,0.78,0.97,0.77
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,72,33,915,565,0.69,0.69,0.91,0.09
+TAJO,4,96.91%,48.45%,16.11%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,597,148,800,40,0.8,0.8,0.9,0.76
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,637,891,57,0,0.42,0.42,0.97,0.05
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,453,52,896,184,0.9,0.9,0.89,0.68
+TAJO,4,96.91%,48.45%,16.11%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,604,169,779,33,0.78,0.78,0.9,0.74
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,637,891,57,0,0.42,0.42,0.97,0.05
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,453,52,896,184,0.9,0.9,0.89,0.68
+TAJO,4,96.91%,48.45%,16.11%,IBk,Oversampling,No Feature Selection,Sensitive Learning,604,169,779,33,0.78,0.78,0.9,0.74
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,Oversampling,Best First,No Cost Sensitive,453,2,946,184,1.0,1.0,0.95,0.74
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,632,273,675,5,0.7,0.7,0.95,0.66
+TAJO,4,96.91%,48.45%,16.11%,IBk,Oversampling,Best First,No Cost Sensitive,632,273,675,5,0.7,0.7,0.95,0.66
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,Oversampling,Best First,Sensitive Threshold,636,773,175,1,0.45,0.45,0.95,0.15
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,637,948,0,0,0.4,0.4,0.95,0.0
+TAJO,4,96.91%,48.45%,16.11%,IBk,Oversampling,Best First,Sensitive Threshold,633,273,675,4,0.7,0.7,0.95,0.66
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,Oversampling,Best First,Sensitive Learning,636,773,175,1,0.45,0.45,0.95,0.15
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,Oversampling,Best First,Sensitive Learning,637,948,0,0,0.4,0.4,0.95,0.0
+TAJO,4,96.91%,48.45%,16.11%,IBk,Oversampling,Best First,Sensitive Learning,633,273,675,4,0.7,0.7,0.95,0.66
+TAJO,4,49.22%,24.61%,16.11%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,622,212,736,15,0.75,0.75,0.98,0.72
+TAJO,4,49.22%,24.61%,16.11%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,32,38,910,605,0.46,0.46,0.89,0.01
+TAJO,4,49.22%,24.61%,16.11%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,600,223,725,37,0.73,0.73,0.86,0.67
+TAJO,4,49.22%,24.61%,16.11%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,637,945,3,0,0.4,0.4,0.97,0.0
+TAJO,4,49.22%,24.61%,16.11%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,455,56,892,182,0.89,0.89,0.86,0.68
+TAJO,4,49.22%,24.61%,16.11%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,601,238,710,36,0.72,0.72,0.86,0.66
+TAJO,4,49.22%,24.61%,16.11%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,637,945,3,0,0.4,0.4,0.97,0.0
+TAJO,4,49.22%,24.61%,16.11%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,455,56,892,182,0.89,0.89,0.86,0.68
+TAJO,4,49.22%,24.61%,16.11%,IBk,Undersampling,No Feature Selection,Sensitive Learning,601,238,710,36,0.72,0.72,0.86,0.66
+TAJO,4,49.22%,24.61%,16.11%,RandomForest,Undersampling,Best First,No Cost Sensitive,479,2,946,158,1.0,1.0,0.95,0.78
+TAJO,4,49.22%,24.61%,16.11%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,633,353,595,4,0.64,0.64,0.95,0.57
+TAJO,4,49.22%,24.61%,16.11%,IBk,Undersampling,Best First,No Cost Sensitive,633,353,595,4,0.64,0.64,0.95,0.57
+TAJO,4,49.22%,24.61%,16.11%,RandomForest,Undersampling,Best First,Sensitive Threshold,637,930,18,0,0.41,0.41,0.95,0.02
+TAJO,4,49.22%,24.61%,16.11%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,637,948,0,0,0.4,0.4,0.95,0.0
+TAJO,4,49.22%,24.61%,16.11%,IBk,Undersampling,Best First,Sensitive Threshold,634,354,594,3,0.64,0.64,0.95,0.57
+TAJO,4,49.22%,24.61%,16.11%,RandomForest,Undersampling,Best First,Sensitive Learning,637,930,18,0,0.41,0.41,0.95,0.02
+TAJO,4,49.22%,24.61%,16.11%,NaiveBayes,Undersampling,Best First,Sensitive Learning,637,948,0,0,0.4,0.4,0.95,0.0
+TAJO,4,49.22%,24.61%,16.11%,IBk,Undersampling,Best First,Sensitive Learning,634,354,594,3,0.64,0.64,0.95,0.57
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,627,60,888,10,0.91,0.91,0.99,0.91
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,74,30,918,563,0.71,0.71,0.93,0.1
+TAJO,4,96.91%,48.45%,16.11%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,586,42,906,51,0.93,0.93,0.93,0.88
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,637,937,11,0,0.4,0.4,0.99,0.01
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,354,44,904,283,0.89,0.89,0.89,0.54
+TAJO,4,96.91%,48.45%,16.11%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,588,42,906,49,0.93,0.93,0.93,0.88
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,637,937,11,0,0.4,0.4,0.99,0.01
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,354,44,904,283,0.89,0.89,0.89,0.54
+TAJO,4,96.91%,48.45%,16.11%,IBk,SMOTE,No Feature Selection,Sensitive Learning,588,42,906,49,0.93,0.93,0.93,0.88
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,SMOTE,Best First,No Cost Sensitive,479,1,947,158,1.0,1.0,0.99,0.78
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,630,93,855,7,0.87,0.87,0.98,0.87
+TAJO,4,96.91%,48.45%,16.11%,IBk,SMOTE,Best First,No Cost Sensitive,630,93,855,7,0.87,0.87,0.98,0.87
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,SMOTE,Best First,Sensitive Threshold,637,795,153,0,0.44,0.44,0.99,0.13
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,637,948,0,0,0.4,0.4,0.98,0.0
+TAJO,4,96.91%,48.45%,16.11%,IBk,SMOTE,Best First,Sensitive Threshold,631,94,854,6,0.87,0.87,0.98,0.87
+TAJO,4,96.91%,48.45%,16.11%,RandomForest,SMOTE,Best First,Sensitive Learning,637,795,153,0,0.44,0.44,0.99,0.13
+TAJO,4,96.91%,48.45%,16.11%,NaiveBayes,SMOTE,Best First,Sensitive Learning,637,948,0,0,0.4,0.4,0.98,0.0
+TAJO,4,96.91%,48.45%,16.11%,IBk,SMOTE,Best First,Sensitive Learning,631,94,854,6,0.87,0.87,0.98,0.87
