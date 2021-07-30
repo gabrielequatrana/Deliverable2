@@ -25,7 +25,7 @@ public class CommitController {
 	
 	public static List<RevCommit> getAllCommits(List<Release> releases, Path repoPath) throws GitAPIException, IOException {
 		List<RevCommit> commits = new ArrayList<>();
-		try (Git git = Git.open(repoPath.toFile()) ){
+		try (Git git = Git.open(repoPath.toFile())){
 			Iterable<RevCommit> logs = git.log().all().call();
 			for (RevCommit commit : logs) {
 				commits.add(commit);

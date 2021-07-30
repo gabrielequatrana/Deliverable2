@@ -29,8 +29,8 @@ import it.isw2.weka.Evaluator;
 public class Main {
 	
 	// Select BOOKKEEPER or TAJO
-	private static String projName = "BOOKKEEPER";
-	private static String repo = "D:/Projects/EclipseProjects/Deliverable2/" + projName + "/.git";
+	private static final String PROJ_NAME = "BOOKKEEPER";
+	private static String repo = PROJ_NAME + "/.git";
 	
 	private static List<Release> releases;
 	private static List<RevCommit> commits;
@@ -47,8 +47,7 @@ public class Main {
 		// Clone selected repository
 		Utilities.logMsg("Cloning repository\n");
 		try {
-			var path = Paths.get("D:/Projects/EclipseProjects/Deliverable2/" + projName);
-			if (!Files.exists(path)) cloneProject(projName);
+			if (!Files.exists(Paths.get(PROJ_NAME))) cloneProject(PROJ_NAME);
 		} catch (GitAPIException e) {
 			Utilities.logError(e);
 		}
@@ -56,7 +55,7 @@ public class Main {
 		// Get all project releases
 		Utilities.logMsg("Getting releases informations\n");
 		try {
-			releases = ReleaseController.getReleases(projName);
+			releases = ReleaseController.getReleases(PROJ_NAME);
 		} catch (IOException | JSONException e) {
 			Utilities.logError(e);
 		}
@@ -72,7 +71,7 @@ public class Main {
 		// Get all project tickets with at least one associated commit
 		Utilities.logMsg("Getting tickets informations\n");
 		try {
-			tickets = TicketController.getTickets(projName, releases);
+			tickets = TicketController.getTickets(PROJ_NAME, releases);
 			CommitController.selectTicketsWithCommit(tickets, commits, releases);
 		} catch (IOException e) {
 			Utilities.logError(e);
@@ -125,7 +124,7 @@ public class Main {
 		// Save metrics on CSV file
 		Utilities.logMsg("Making file csv bugginess\n");
 		try {
-			CSVWriter.writeCsvBugginess(releases, projName);
+			CSVWriter.writeCsvBugginess(releases, PROJ_NAME);
 		} catch (IOException e) {
 			Utilities.logError(e);
 		}
@@ -133,7 +132,7 @@ public class Main {
 		// Convert CSV into ARFF
 		Utilities.logMsg("Converting csv to arff\n");
 		try {
-			CsvToArff.csvToArff(new File("out/csv/" + projName + ".csv"), projName);
+			CsvToArff.csvToArff(new File("out/csv/" + PROJ_NAME + ".csv"), PROJ_NAME);
 		} catch (IOException e) {
 			Utilities.logError(e);
 		}
@@ -141,7 +140,7 @@ public class Main {
 		// Evaluate dataset
 		Utilities.logMsg("Evaluating datatset\n");
 		try {
-			entries = Evaluator.evaluate(projName, releases.size());
+			entries = Evaluator.evaluate(PROJ_NAME, releases.size());
 		} catch (Exception e) {
 			Utilities.logError(e);
 		}
@@ -149,7 +148,7 @@ public class Main {
 		// Save results on CSV file
 		Utilities.logMsg("Making file csv evaluation\n");
 		try {
-			CSVWriter.printCSV(entries, projName);
+			CSVWriter.printCSV(entries, PROJ_NAME);
 		} catch (IOException e) {
 			Utilities.logError(e);
 		}
