@@ -30,7 +30,8 @@ public class Main {
 	
 	// Select BOOKKEEPER or TAJO
 	private static final String PROJ_NAME = "BOOKKEEPER";
-	private static String repo = PROJ_NAME + "/.git";
+	private static String repoDir = "proj/" + PROJ_NAME.toLowerCase();
+	private static String repo = repoDir + "/.git";
 	
 	private static List<Release> releases;
 	private static List<RevCommit> commits;
@@ -47,7 +48,7 @@ public class Main {
 		// Clone selected repository
 		Utilities.logMsg("Cloning repository\n");
 		try {
-			if (!Files.exists(Paths.get(PROJ_NAME))) cloneProject(PROJ_NAME);
+			cloneProject(PROJ_NAME);
 		} catch (GitAPIException e) {
 			Utilities.logError(e);
 		}
@@ -132,7 +133,7 @@ public class Main {
 		// Convert CSV into ARFF
 		Utilities.logMsg("Converting csv to arff\n");
 		try {
-			CsvToArff.csvToArff(new File("out/csv/" + PROJ_NAME + ".csv"), PROJ_NAME);
+			CsvToArff.csvToArff(PROJ_NAME);
 		} catch (IOException e) {
 			Utilities.logError(e);
 		}
@@ -158,8 +159,10 @@ public class Main {
 	}
 	
 	private static void cloneProject(String projName) throws GitAPIException {
-		String url = "https://github.com/apache/" + projName;
-		Git git = Git.cloneRepository().setURI(url).call();
-		git.close();
+		if (!Files.exists(Paths.get(repoDir))) {
+			String url = "https://github.com/apache/" + projName.toLowerCase();
+			Git git = Git.cloneRepository().setURI(url).setDirectory(new File(repoDir)).call();
+			git.close();
+		}
 	}
 }

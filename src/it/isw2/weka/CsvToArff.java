@@ -14,11 +14,12 @@ public class CsvToArff {
 	}
 	
 	// Convert a csv file to an arff file
-	public static void csvToArff(File file, String projName) throws IOException {
+	public static void csvToArff(String projName) throws IOException {
 
 		// Load CSV
+		var csv = new File("out/csv/" + projName + ".csv");
 		CSVLoader loader = new CSVLoader();
-		loader.setSource(file);
+		loader.setSource(csv);
 		Instances data = loader.getDataSet();
 		
 		// Save ARFF

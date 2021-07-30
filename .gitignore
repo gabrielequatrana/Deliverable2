@@ -1,6 +1,5 @@
 /bin
-/BOOKKEEPER
-/TAJO
+/proj
 /.settings
-/.classpath
-/.project
+.classpath
+.project
