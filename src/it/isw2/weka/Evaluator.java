@@ -41,6 +41,13 @@ public class Evaluator {
 
 	}
 
+	/**
+	 * Performs a WEKA evaluation for a dataset using a Walk-Forward technique
+	 * @param projName
+	 * @param parts
+	 * @return eval entries
+	 * @throws CustomException
+	 */
 	public static List<EvalEntry> evaluate(String projName, int parts) throws CustomException {
 		try {
 			String path = "out/arff/" + projName + ".arff";
@@ -52,9 +59,10 @@ public class Evaluator {
 			filter.setAttributeIndex("1");
 			filter.setInputFormat(dataset);
 			
-	
+			// Walk forward
 			for (var a = 2; a <= parts; a++) {
 	
+				// The dataset is splitted in training and testing sets
 				filter.setInvertSelection(true);
 				filter.setSplitPoint(a);
 				Instances training = Filter.useFilter(dataset, filter);
@@ -66,6 +74,7 @@ public class Evaluator {
 				filter.setSplitPoint(a);
 				Instances testing = Filter.useFilter(tmp, filter);
 	
+				// Perform the evaluation with all the settings
 				for (var i = 0; i <= 3; i++) {
 					for (var j = 0; j <= 1; j++) {
 						for (var k = 0; k <= 2; k++) {
@@ -82,6 +91,16 @@ public class Evaluator {
 		}
 	}
 
+	/**
+	 * Apply filters to the evaluation
+	 * @param training
+	 * @param testing
+	 * @param i
+	 * @param j
+	 * @param k
+	 * @param run
+	 * @throws CustomException
+	 */
 	private static void applyFilters(Instances training, Instances testing, int i, int j, int k, int run) throws CustomException {
 		try {
 			int numAttr = training.numAttributes();
@@ -121,6 +140,17 @@ public class Evaluator {
 		
 	}
 
+	/**
+	 * Compute an evaluation with selected parameters
+	 * @param training
+	 * @param testing
+	 * @param csClassifiers
+	 * @param i
+	 * @param j
+	 * @param k
+	 * @param run
+	 * @throws CustomException
+	 */
 	private static void compute(Instances training, Instances testing, List<CostSensitiveClassifier> csClassifiers, int i, int j, int k, int run) throws CustomException {
 		try {
 			Evaluation evalRF = null;
@@ -246,6 +276,13 @@ public class Evaluator {
 		}
 	}
 
+	/**
+	 * Perform Best First attribute selection on the training and testing sets
+	 * @param training
+	 * @param testing
+	 * @return instances
+	 * @throws CustomException
+	 */
 	private static List<Instances> bestFirst(Instances training, Instances testing) throws CustomException {
 		try {
 			AttributeSelection filter = new AttributeSelection();
@@ -269,6 +306,12 @@ public class Evaluator {
 		}
 	}
 
+	/**
+	 * Perform OverSampling on the training set
+	 * @param training
+	 * @return instances
+	 * @throws CustomException
+	 */
 	private static Instances overSampling(Instances training) throws CustomException {
 		try {
 			FilteredClassifier fc = new FilteredClassifier();
@@ -289,6 +332,12 @@ public class Evaluator {
 		}
 	}
 
+	/**
+	 * Perform UnderSampling on the training set
+	 * @param training
+	 * @return instances
+	 * @throws CustomException
+	 */
 	private static Instances underSampling(Instances training) throws CustomException {
 		try {
 			FilteredClassifier fc = new FilteredClassifier();
@@ -306,6 +355,12 @@ public class Evaluator {
 		}
 	}
 
+	/**
+	 * Perform SMOTE on the training set
+	 * @param training
+	 * @return instances
+	 * @throws CustomException
+	 */
 	private static Instances smote(Instances training) throws CustomException {
 		try {
 			FilteredClassifier fc = new FilteredClassifier();
@@ -330,6 +385,10 @@ public class Evaluator {
 		}
 	}
 
+	/**
+	 * Perform a Sensitive Threshold
+	 * @return CostSensitiveClassifiers
+	 */
 	private static List<CostSensitiveClassifier> sensitiveThreshold() {
 
 		List<CostSensitiveClassifier> csClassifiers = new ArrayList<>();
@@ -352,6 +411,12 @@ public class Evaluator {
 		return csClassifiers;
 	}
 
+	/**
+	 * Build a new Cost Matrix for the Cost Sensitive Classifier
+	 * @param weightFalsePositive
+	 * @param weightFalseNegative
+	 * @return CostMatrix
+	 */
 	private static CostMatrix buildCostMatrix(double weightFalsePositive, double weightFalseNegative) {
 		CostMatrix costMatrix = new CostMatrix(2);
 		costMatrix.setCell(0, 0, 0.0);
@@ -361,6 +426,10 @@ public class Evaluator {
 		return costMatrix;
 	}
 
+	/**
+	 * Perform a Sensitive Learning
+	 * @return CostSensitiveClassifiers
+	 */
 	private static List<CostSensitiveClassifier> sensitiveLearning() {
 		List<CostSensitiveClassifier> csClassifiers = new ArrayList<>();
 
@@ -385,6 +454,11 @@ public class Evaluator {
 		return csClassifiers;
 	}
 
+	/**
+	 * Cont positive and negative values of a training set
+	 * @param training
+	 * @return array where 0:negative, 1:positive
+	 */
 	private static int[] countValues(Instances training) {
 		// 0: negative, 1: positive
 		var countValues = new int[training.attribute(training.numAttributes() - 1).numValues()];

@@ -34,14 +34,19 @@ import it.isw2.utility.Utilities;
 public class JavaFileController {
 	
 	private static final String FILE_EXTENSION = ".java";
-	
 	private static Repository repository;
 
 	private JavaFileController() {
 		
 	}
 
-	// Return an HashMap where key = new path, value = old paths
+	/**
+	 * Return an HashMap where key = new path, value = old paths
+	 * @param releases
+	 * @param repo
+	 * @return
+	 * @throws IOException
+	 */
 	public static Map<String, List<String>> checkRename(List<Release> releases, String repo) throws IOException {
 		Map<String, List<String>> fileMap = new HashMap<>();
 		FileRepositoryBuilder frb = new FileRepositoryBuilder();
@@ -63,6 +68,13 @@ public class JavaFileController {
 		return fileMap;
 	}
 	
+	/**
+	 * Retrieves all files of a project and divides them among the releases
+	 * @param repoPath
+	 * @param releases
+	 * @param fileMap
+	 * @throws IOException
+	 */
 	public static void getJavaFiles(Path repoPath, List<Release> releases, Map<String, List<String>> fileMap) throws IOException {
 		try (Git git = Git.open(repoPath.toFile())) {
 			for (Release release : releases) {
@@ -88,6 +100,13 @@ public class JavaFileController {
 		}
 	}
 	
+	/**
+	 * Check if the classes of the project are buggy
+	 * @param releases
+	 * @param tickets
+	 * @param fileMap
+	 * @throws IOException
+	 */
 	public static void checkBugginess(List<Release> releases, List<Ticket> tickets, Map<String, List<String>> fileMap) throws IOException {
 		for (Ticket ticket : tickets) {
 			List<Integer> av = ticket.getAv();
@@ -184,6 +203,12 @@ public class JavaFileController {
 		}
 	}
 	
+	/**
+	 * Get a list of DiffEntry from a commit
+	 * @param commit
+	 * @return diffs
+	 * @throws IOException
+	 */
 	public static List<DiffEntry> getDiffs(RevCommit commit) throws IOException {
 		List<DiffEntry> diffs;
 		DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);

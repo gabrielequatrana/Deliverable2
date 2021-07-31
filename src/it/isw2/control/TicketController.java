@@ -20,6 +20,13 @@ public class TicketController {
 		
 	}
 
+	/**
+	 * Retrieves all tickets of a project with the Rest API of JIRA
+	 * @param projName
+	 * @param releases
+	 * @return
+	 * @throws IOException
+	 */
 	public static List<Ticket> getTickets(String projName, List<Release> releases) throws IOException {
 		List<Ticket> tickets = new ArrayList<>();
 		
@@ -109,7 +116,10 @@ public class TicketController {
 		return releaseIndex;
 	}
 	
-	// Set correct AV list for every ticket
+	/**
+	 * Set correct AV list for every ticket
+	 * @param tickets
+	 */
 	public static void checkAV(List<Ticket> tickets) {
 		for (Ticket ticket : tickets) {
 			if (ticket.getIv() != 0) {
@@ -137,7 +147,11 @@ public class TicketController {
 		}
 	}
 	
-	// Remove tickets associated with last half of releases
+	/**
+	 * Remove tickets associated with last half of releases
+	 * @param halfReleases
+	 * @param tickets
+	 */
 	public static void removeTickets(int halfReleases, List<Ticket> tickets) {
 		Iterator<Ticket> ticket = tickets.iterator();
 		while (ticket.hasNext()) {

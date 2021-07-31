@@ -15,6 +15,10 @@ public class ProportionController {
 		
 	}
 	
+	/**
+	 * Compute the P of all tickets of a project
+	 * @param tickets
+	 */
 	public static void proportion(List<Ticket> tickets) {
 		List<Ticket> checkedTickets = initialCheck(tickets);
 		

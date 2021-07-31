@@ -6,14 +6,18 @@ import java.util.List;
 
 import org.eclipse.jgit.revwalk.RevCommit;
 
+/**
+ * Entity that models a release of the project
+ *
+ */
 public class Release {
 
-	private Integer index;
-	private String name;
-	private LocalDateTime releaseDate;
-	private RevCommit lastCommit;
-	private List<JavaFile> javaFiles;
-	private List<RevCommit> commits;
+	private Integer index;					// Index to have an order between the releases
+	private String name;					// Release ID
+	private LocalDateTime releaseDate;		// Release date
+	private RevCommit lastCommit;			// Last commit of the release
+	private List<JavaFile> javaFiles;		// Java Classes of the release
+	private List<RevCommit> commits;		// Git commits of the release
 	
 	public Release(Integer index, LocalDateTime releaseDate, String name) {
 		this.index = index;

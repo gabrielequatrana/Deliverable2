@@ -23,6 +23,14 @@ public class CommitController {
 		
 	}
 	
+	/**
+	 * Gets all the commits of a project and divides them among the various releases.
+	 * @param releases
+	 * @param repoPath
+	 * @return
+	 * @throws GitAPIException
+	 * @throws IOException
+	 */
 	public static List<RevCommit> getAllCommits(List<Release> releases, Path repoPath) throws GitAPIException, IOException {
 		List<RevCommit> commits = new ArrayList<>();
 		try (Git git = Git.open(repoPath.toFile())){
@@ -65,7 +73,12 @@ public class CommitController {
 		return commits;
 	}
 	
-	// Selects only the tickets with associated commits
+	/**
+	 * Selects only the tickets with at least an associated commit
+	 * @param tickets
+	 * @param commits
+	 * @param releases
+	 */
 	public static void selectTicketsWithCommit(List<Ticket> tickets, List<RevCommit> commits, List<Release> releases) {
 		List<LocalDateTime> commitDates = new ArrayList<>();
 		
@@ -105,7 +118,7 @@ public class CommitController {
 		}
 	}	
 		
-	public static int compareDateRelease(LocalDateTime date, List<Release> releases) {
+	private static int compareDateRelease(LocalDateTime date, List<Release> releases) {
 		var releaseIndex = 0;
 		for (var i = 0; i < releases.size(); i++) {
 			if (date.isBefore(releases.get(i).getReleaseDate())) {

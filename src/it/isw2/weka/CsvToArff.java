@@ -13,7 +13,11 @@ public class CsvToArff {
 		
 	}
 	
-	// Convert a csv file to an arff file
+	/**
+	 * Convert a CSV file to an ARFF file
+	 * @param projName
+	 * @throws IOException
+	 */
 	public static void csvToArff(String projName) throws IOException {
 
 		// Load CSV

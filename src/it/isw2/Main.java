@@ -28,8 +28,7 @@ import it.isw2.weka.Evaluator;
 
 public class Main {
 	
-	// Select BOOKKEEPER or TAJO
-	private static final String PROJ_NAME = "BOOKKEEPER";
+	private static final String PROJ_NAME = "BOOKKEEPER";					// Select BOOKKEEPER or TAJO
 	private static String repoDir = "proj/" + PROJ_NAME.toLowerCase();
 	private static String repo = repoDir + "/.git";
 	
@@ -149,7 +148,7 @@ public class Main {
 		// Save results on CSV file
 		Utilities.logMsg("Making file csv evaluation\n");
 		try {
-			CSVWriter.printCSV(entries, PROJ_NAME);
+			CSVWriter.writeCSVEvaluation(entries, PROJ_NAME);
 		} catch (IOException e) {
 			Utilities.logError(e);
 		}
@@ -158,6 +157,11 @@ public class Main {
 		Utilities.logMsg("Stopping program\n");
 	}
 	
+	/**
+	 * Clone a Git project
+	 * @param projName
+	 * @throws GitAPIException
+	 */
 	private static void cloneProject(String projName) throws GitAPIException {
 		if (!Files.exists(Paths.get(repoDir))) {
 			String url = "https://github.com/apache/" + projName.toLowerCase();

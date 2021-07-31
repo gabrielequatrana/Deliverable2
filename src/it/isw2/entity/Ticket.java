@@ -6,20 +6,24 @@ import java.util.List;
 
 import org.eclipse.jgit.revwalk.RevCommit;
 
+/**
+ * Entity that models a JIRA ticket
+ *
+ */
 public class Ticket {
 
-	private String id;
-	private LocalDateTime creationDate;
-	private LocalDateTime resolutionDate;
+	private String id;						// Ticket ID
+	private LocalDateTime creationDate;		// Ticket creation date
+	private LocalDateTime resolutionDate;	// Ticket resolution date
 	
-	private Integer fv;
-	private Integer ov;
-	private Integer iv;
-	private List<Integer> av;
+	private Integer fv;						// Fix version of the ticket
+	private Integer ov;						// Opening version of the ticket
+	private Integer iv;						// Injected version of the ticket
+	private List<Integer> av;				// Affected versions of the ticket
 	
-	private List<String> javaClasses;
-	private List<RevCommit> commits;
-	private int p;
+	private List<String> javaClasses;		// Ticket related Java classes
+	private List<RevCommit> commits;		// Ticket related Git commits
+	private int p;							// Ticket proportion
 	
 	public Ticket(String id, LocalDateTime creationDate, List<Integer> av) {
 		this.id = id;

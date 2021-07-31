@@ -2,23 +2,27 @@ package it.isw2.entity;
 
 import java.util.List;
 
+/**
+ * Entity that models a Java class
+ *
+ */
 public class JavaFile {
 
-	private String path;
-	private List<String> oldPaths;
+	private String path;					// Actual path of the class
+	private List<String> oldPaths;			// Old paths of the class
 	
-	private Integer loc;
-	private Integer locTouched;
-	private Integer numRevisions;
-	private List<String> authList;
-	private Integer locAdded;
-	private List<Integer> locAddedList;
-	private Integer churn;
-	private List<Integer> churnList;
-	private Integer chg;
-	private List<Integer> chgList;
-	private long addDate;
-	private String bugginess;
+	private Integer loc;					// Lines of code of the class
+	private Integer locTouched;				// LOC touched (added + removed) of the class
+	private Integer numRevisions;			// Number of commits that have touched the class
+	private List<String> authList;			// List of authors of the class
+	private Integer locAdded;				// LOC added to the class
+	private List<Integer> locAddedList;		// List of LOC added to the class
+	private Integer churn;					// Churn (added - removed) of the class
+	private List<Integer> churnList;		// List of Churn of the class
+	private Integer chg;					// CHG (number of file commited with the class) of the class
+	private List<Integer> chgList;			// List of CHG of the class
+	private long addDate;					// Date the class was added
+	private String bugginess;				// Bugginess of the class
 	
 	public JavaFile(String name) {
 		this.path = name;

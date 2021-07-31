@@ -29,6 +29,12 @@ public class MetricsController {
 		
 	}
 	
+	/**
+	 * Compute the metrics of all classes of the project
+	 * @param releases
+	 * @param repo
+	 * @throws IOException
+	 */
 	public static void computeMetrics(List<Release> releases, String repo) throws IOException {
 		FileRepositoryBuilder frb = new FileRepositoryBuilder();
 		Repository repository = frb.setGitDir(new File(repo)).readEnvironment()
@@ -190,6 +196,13 @@ public class MetricsController {
 		}
 	}
 	
+	/**
+	 * Compute the lines of code of a class
+	 * @param treeWalk
+	 * @param repository
+	 * @return loc
+	 * @throws IOException
+	 */
 	public static int loc(TreeWalk treeWalk, Repository repository) throws IOException {
 		ObjectLoader loader = repository.open(treeWalk.getObjectId(0));
 		var output = new ByteArrayOutputStream();

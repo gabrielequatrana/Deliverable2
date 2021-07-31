@@ -29,6 +29,13 @@ public class ReleaseController {
 		
 	}
 
+	/**
+	 * Retrievs the releases of a project with the Rest API of JIRA
+	 * @param projName
+	 * @return releases
+	 * @throws IOException
+	 * @throws JSONException
+	 */
 	public static List<Release> getReleases(String projName) throws IOException, JSONException {
 		List<Release> releaseList = new ArrayList<>();
 
@@ -72,8 +79,8 @@ public class ReleaseController {
 		
 		return releaseList;
 	}
-
-	public static void addRelease(String strDate, String name, String id) {
+	
+	private static void addRelease(String strDate, String name, String id) {
 		var date = LocalDate.parse(strDate);
 		LocalDateTime dateTime = date.atStartOfDay();
 
@@ -84,6 +91,11 @@ public class ReleaseController {
 		releaseID.put(dateTime, id);
 	}
 	
+	/**
+	 * Remove the last half of releases because they are noisy
+	 * @param releases
+	 * @param tickets
+	 */
 	public static void removeHalfReleases(List<Release> releases, List<Ticket> tickets) {
 		int numReleases = releases.size();
 		int halfReleases = numReleases / 2;
