@@ -17,6 +17,7 @@ public class JavaFile {
 	private List<Integer> churnList;
 	private Integer chg;
 	private List<Integer> chgList;
+	private long addDate;
 	private String bugginess;
 	
 	public JavaFile(String name) {
@@ -125,5 +126,13 @@ public class JavaFile {
 
 	public void setAuthList(List<String> authList) {
 		this.authList = authList;
+	}
+	
+	public long getAddDate() {
+		return addDate;
+	}
+
+	public void setAddDate(long addDate) {
+		this.addDate = addDate;
 	}
 }

@@ -55,8 +55,9 @@ public class JavaFileController {
 		}
 		
 		for (var i = 0; i < fileMap.size(); i++) {
-			Object key = fileMap.keySet().toArray()[i];
-			fileMap.get(key).stream().distinct().collect(Collectors.toList());
+			String key = (String) fileMap.keySet().toArray()[i];
+			List<String> deduped = fileMap.get(key).stream().distinct().collect(Collectors.toList());
+			fileMap.put(key, deduped);
 		}
 		
 		return fileMap;

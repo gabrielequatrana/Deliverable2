@@ -3,7 +3,9 @@ package it.isw2.utility;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.ZoneId;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 import it.isw2.entity.EvalEntry;
@@ -19,9 +21,10 @@ public class CSVWriter {
 	}
 	
 	public static void writeCsvBugginess(List<Release> releases, String projName) throws IOException {
-		try (var fileWriter = new FileWriter("out/csv/" + projName.toLowerCase() + ".csv")) {
-			var attributes = "Version;File_Name;LOC;LOC_touched;NR;NAuth;LOC_added;MAX_LOC_added;AVG_LOC_added;Churn;MAX_Churn;AVG_Churn;ChgSetSize;MAX_ChgSet;AVG_ChgSet;Bugginess\n";
+		try (var fileWriter = new FileWriter("out/csv/" + projName.toLowerCase() + "_dataset.csv")) {
+			var attributes = "Version;File_Name;LOC;LOC_touched;NR;NAuth;LOC_added;MAX_LOC_added;AVG_LOC_added;Churn;MAX_Churn;AVG_Churn;ChgSetSize;MAX_ChgSet;AVG_ChgSet;Age;Bugginess\n";
 			fileWriter.append(attributes.replace(";", DELIM));
+			
 			for (Release release : releases) {
 				for (JavaFile file : release.getJavaFiles()) {
 					
@@ -92,6 +95,18 @@ public class CSVWriter {
 						fileWriter.append(DELIM);
 						fileWriter.append(String.format("%.2f", avgChg).replace(",", "."));
 					}
+					
+					fileWriter.append(DELIM);
+					
+					long mil1 = file.getAddDate();
+					Date d2 = Date.from(release.getReleaseDate().atZone(ZoneId.of("UTC")).toInstant());
+					long mil2 = d2.getTime();	
+						
+					long mil = mil2 - mil1;
+
+					Integer weeks = (int) (mil / (1000*60*60*24*7));
+					
+					fileWriter.append(String.valueOf(weeks));
 					
 					fileWriter.append(DELIM);
 					fileWriter.append(file.getBugginess());

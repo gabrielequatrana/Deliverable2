@@ -46,7 +46,7 @@ public class MetricsController {
 				String authName = commit.getAuthorIdent().getName();
 				List<DiffEntry> diffs = JavaFileController.getDiffs(commit);
 				if (diffs != null) {
-					getMetrics(diffs, files, authName, df);
+					getMetrics(diffs, files, authName, df, commit, releases);
 				}
 			}
 			
@@ -54,15 +54,14 @@ public class MetricsController {
 		}
 	}
 	
-	private static void getMetrics(List<DiffEntry> diffs, List<JavaFile> files, String authName, DiffFormatter df) {
+	private static void getMetrics(List<DiffEntry> diffs, List<JavaFile> files, String authName, DiffFormatter df, RevCommit commit, List<Release> releases) {
 		var numDiff = 0;
+		
 		for (DiffEntry diff : diffs) {
 			if (diff.toString().contains(".java")) {
 				numDiff++;
 			}
-		}
-		
-		for (DiffEntry diff : diffs) {
+			
 			String type = diff.getChangeType().toString();
 			if (diff.toString().contains(".java") && (type.equals("MODIFY") || type.equals("DELETE") || type.equals("ADD") || type.equals("RENAME"))) {
 				String file;
@@ -73,16 +72,31 @@ public class MetricsController {
 					file = diff.getNewPath();
 				}
 				
+				if (type.equals("ADD")) {
+					long addDate = commit.getCommitTime() * 1000L;
+					setAddDate(file, addDate, releases);
+				}
+				
 				addFiles(files, file, authName, numDiff, diff, df);
 			}
 		}
 	}
 	
+	private static void setAddDate(String file, long addDate, List<Release> releases) {
+		for (Release release : releases) {
+			for (JavaFile releaseFile : release.getJavaFiles()) {
+				if (releaseFile.getPath().equals(file) || (releaseFile.getOldPaths() != null && releaseFile.getOldPaths().contains(file))) {
+					releaseFile.setAddDate(addDate);
+				}
+			}
+		}
+	}
+	
 	private static void addFiles(List<JavaFile> files, String fileName, String authName, int numDiff, DiffEntry diff, DiffFormatter df) {
-		var count = 0;
+		var fileInList = 0;
 		var locAdded = 0;
 		var locDeleted = 0;
-		
+
 		try {
 			for (Edit edit : df.toFileHeader(diff).toEditList()) {
 				locAdded += edit.getEndB() - edit.getBeginB();
@@ -96,8 +110,25 @@ public class MetricsController {
 		int churn = locAdded - locDeleted;
 		int locTouched = locAdded + locDeleted;
 		
-		// Files list empty
-		if (files.isEmpty()) {
+		// File already in list
+		for (JavaFile file : files) {
+			if (file.getPath().equals(fileName)) {
+				file.setLocTouched(file.getLocTouched() + locTouched);
+				file.setNumRevisions(file.getNumRevisions()+1);
+				file.getAuthList().add(authName);
+				file.setChg(file.getChg() + numDiff);
+				file.getChgList().add(numDiff);
+				file.setLocAdded(file.getLocAdded() + locAdded);
+				file.getLocAddedList().add(locAdded);
+				file.setChurn(file.getChurn() + churn);
+				file.getChurnList().add(churn);
+				
+				fileInList = 1;
+			}
+		}
+		
+		// File not in list
+		if (fileInList == 0) {
 			JavaFile file = new JavaFile(fileName);
 			
 			List<String> auths = new ArrayList<>();
@@ -113,53 +144,6 @@ public class MetricsController {
 			file.setLocTouched(locTouched);
 			file.setNumRevisions(1);
 			file.setAuthList(auths);
-			file.setChg(numDiff);
-			file.setChgList(chgList);
-			file.setLocAdded(locAdded);
-			file.setLocAddedList(locAddedList);
-			file.setChurn(churn);
-			file.setChurnList(churnList);
-			
-			files.add(file);
-			count = 1;
-		}
-		
-		// File in files list
-		else {
-			for (JavaFile file : files) {
-				if (file.getPath().equals(fileName)) {
-					file.setLocTouched(file.getLocTouched() + locTouched);
-					file.setNumRevisions(file.getNumRevisions()+1);
-					file.getAuthList().add(authName);
-					file.setChg(file.getChg() + numDiff);
-					file.getChgList().add(numDiff);
-					file.setLocAdded(file.getLocAdded() + locAdded);
-					file.getLocAddedList().add(locAdded);
-					file.setChurn(file.getChurn() + churn);
-					file.getChurnList().add(churn);
-					
-					count = 1;
-				}
-			}
-		}
-		
-		// File not in list and list isn't empty
-		if (count == 0) {
-			JavaFile file = new JavaFile(fileName);
-			
-			List<String> authList = new ArrayList<>();
-			List<Integer> chgList = new ArrayList<>();
-			List<Integer> locAddedList = new ArrayList<>();
-			List<Integer> churnList = new ArrayList<>();
-			
-			authList.add(authName);
-			chgList.add(numDiff);
-			locAddedList.add(locAdded);
-			churnList.add(churn);
-			
-			file.setLocTouched(locTouched);
-			file.setNumRevisions(1);
-			file.setAuthList(authList);
 			file.setChg(numDiff);
 			file.setChgList(chgList);
 			file.setLocAdded(locAdded);

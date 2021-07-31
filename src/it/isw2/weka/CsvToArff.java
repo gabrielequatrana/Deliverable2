@@ -17,7 +17,7 @@ public class CsvToArff {
 	public static void csvToArff(String projName) throws IOException {
 
 		// Load CSV
-		var csv = new File("out/csv/" + projName + ".csv");
+		var csv = new File("out/csv/" + projName + "_dataset.csv");
 		CSVLoader loader = new CSVLoader();
 		loader.setSource(csv);
 		Instances data = loader.getDataSet();

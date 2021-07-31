@@ -1,103 +1,103 @@
 Dataset,#TrainingRelease,%Training,%Defective_in_training,%Defective_in_testing,Classifier,Balancing,Feature_Selection,Sensitivity,TP,FP,TN,FN,Precision,Recall,AUC,Kappa
-BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,137,15,102,47,0.68,0.68,0.84,0.59
-BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,174,85,32,10,0.76,0.76,0.77,0.25
-BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,52,27,90,132,0.41,0.41,0.53,0.04
-BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,182,109,8,2,0.8,0.8,0.83,0.07
-BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,175,86,31,9,0.78,0.78,0.77,0.25
-BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,52,27,90,132,0.41,0.41,0.53,0.04
-BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,182,109,8,2,0.8,0.8,0.83,0.07
-BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,175,86,31,9,0.78,0.78,0.77,0.25
-BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,No Feature Selection,Sensitive Learning,52,27,90,132,0.41,0.41,0.53,0.04
-BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,Best First,No Cost Sensitive,134,7,110,50,0.69,0.69,0.84,0.63
-BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,177,92,25,7,0.78,0.78,0.81,0.2
-BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,Best First,No Cost Sensitive,62,19,98,122,0.45,0.45,0.59,0.15
+BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,134,8,109,50,0.69,0.69,0.85,0.62
+BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,171,83,34,13,0.72,0.72,0.76,0.25
+BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,90,15,102,94,0.52,0.52,0.68,0.32
+BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,183,109,8,1,0.89,0.89,0.85,0.08
+BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,174,85,32,10,0.76,0.76,0.76,0.25
+BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,90,15,102,94,0.52,0.52,0.68,0.32
+BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,183,109,8,1,0.89,0.89,0.85,0.08
+BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,174,85,32,10,0.76,0.76,0.76,0.25
+BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,No Feature Selection,Sensitive Learning,90,15,102,94,0.52,0.52,0.68,0.32
+BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,Best First,No Cost Sensitive,135,8,109,49,0.69,0.69,0.84,0.63
+BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,176,90,27,8,0.77,0.77,0.83,0.21
+BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,Best First,No Cost Sensitive,136,9,108,48,0.69,0.69,0.84,0.62
 BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,Best First,Sensitive Threshold,184,117,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,179,94,23,5,0.82,0.82,0.8,0.2
-BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,Best First,Sensitive Threshold,62,19,98,122,0.45,0.45,0.59,0.15
+BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,179,95,22,5,0.81,0.81,0.82,0.19
+BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,Best First,Sensitive Threshold,136,9,108,48,0.69,0.69,0.84,0.62
 BOOKKEEPER,1,7.72%,4.15%,3.76%,RandomForest,No Sampling,Best First,Sensitive Learning,184,117,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,Best First,Sensitive Learning,179,94,23,5,0.82,0.82,0.8,0.2
-BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,Best First,Sensitive Learning,62,19,98,122,0.45,0.45,0.59,0.15
-BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,163,77,40,21,0.66,0.66,0.79,0.25
-BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,168,82,35,16,0.69,0.69,0.75,0.24
-BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,109,87,30,75,0.29,0.29,0.37,-0.15
-BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,183,113,4,1,0.8,0.8,0.81,0.03
-BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,171,83,34,13,0.72,0.72,0.74,0.25
-BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,109,87,30,75,0.29,0.29,0.37,-0.15
-BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,183,113,4,1,0.8,0.8,0.81,0.03
-BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,171,83,34,13,0.72,0.72,0.74,0.25
-BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,No Feature Selection,Sensitive Learning,109,87,30,75,0.29,0.29,0.37,-0.15
-BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,Best First,No Cost Sensitive,147,30,87,37,0.7,0.7,0.83,0.54
-BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,171,93,24,13,0.65,0.65,0.68,0.15
-BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,Best First,No Cost Sensitive,95,75,42,89,0.32,0.32,0.39,-0.12
-BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,Best First,Sensitive Threshold,184,117,0,0,NaN,NaN,0.81,0.0
-BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,176,95,22,8,0.73,0.73,0.66,0.17
-BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,Best First,Sensitive Threshold,95,75,42,89,0.32,0.32,0.39,-0.12
-BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,Best First,Sensitive Learning,184,117,0,0,NaN,NaN,0.81,0.0
-BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,Best First,Sensitive Learning,176,95,22,8,0.73,0.73,0.66,0.17
-BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,Best First,Sensitive Learning,95,75,42,89,0.32,0.32,0.39,-0.12
-BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,152,62,55,32,0.63,0.63,0.84,0.31
-BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,172,86,31,12,0.72,0.72,0.77,0.23
-BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,165,73,44,19,0.7,0.7,0.64,0.3
-BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,183,109,8,1,0.89,0.89,0.85,0.08
-BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,174,86,31,10,0.76,0.76,0.77,0.24
-BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,165,73,44,19,0.7,0.7,0.64,0.3
-BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,183,109,8,1,0.89,0.89,0.85,0.08
-BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,174,86,31,10,0.76,0.76,0.77,0.24
-BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,No Feature Selection,Sensitive Learning,165,73,44,19,0.7,0.7,0.64,0.3
-BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,Best First,No Cost Sensitive,137,19,98,47,0.68,0.68,0.85,0.56
-BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,176,92,25,8,0.76,0.76,0.77,0.2
-BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,Best First,No Cost Sensitive,147,37,80,37,0.68,0.68,0.74,0.48
-BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,Best First,Sensitive Threshold,184,117,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,179,97,20,5,0.8,0.8,0.8,0.17
-BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,Best First,Sensitive Threshold,147,37,80,37,0.68,0.68,0.74,0.48
-BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,Best First,Sensitive Learning,184,117,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,Best First,Sensitive Learning,179,97,20,5,0.8,0.8,0.8,0.17
-BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,Best First,Sensitive Learning,147,37,80,37,0.68,0.68,0.74,0.48
-BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,148,43,74,36,0.67,0.67,0.85,0.44
-BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,172,85,32,12,0.73,0.73,0.77,0.23
-BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,52,27,90,132,0.41,0.41,0.53,0.04
-BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,184,117,0,0,NaN,NaN,0.85,0.0
-BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,173,85,32,11,0.74,0.74,0.77,0.24
-BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,52,27,90,132,0.41,0.41,0.53,0.04
-BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,184,117,0,0,NaN,NaN,0.85,0.0
-BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,173,85,32,11,0.74,0.74,0.77,0.24
-BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,No Feature Selection,Sensitive Learning,52,27,90,132,0.41,0.41,0.53,0.04
-BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,Best First,No Cost Sensitive,140,11,106,44,0.71,0.71,0.84,0.63
-BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,168,77,40,16,0.71,0.71,0.81,0.28
-BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,Best First,No Cost Sensitive,125,12,105,59,0.64,0.64,0.79,0.54
+BOOKKEEPER,1,7.72%,4.15%,3.76%,NaiveBayes,No Sampling,Best First,Sensitive Learning,179,95,22,5,0.81,0.81,0.82,0.19
+BOOKKEEPER,1,7.72%,4.15%,3.76%,IBk,No Sampling,Best First,Sensitive Learning,136,9,108,48,0.69,0.69,0.84,0.62
+BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,151,46,71,33,0.68,0.68,0.84,0.44
+BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,162,79,38,22,0.63,0.63,0.72,0.23
+BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,70,12,105,114,0.48,0.48,0.58,0.24
+BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,183,114,3,1,0.75,0.75,0.86,0.02
+BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,167,80,37,17,0.69,0.69,0.71,0.25
+BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,70,12,105,114,0.48,0.48,0.58,0.24
+BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,183,114,3,1,0.75,0.75,0.86,0.02
+BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,167,80,37,17,0.69,0.69,0.71,0.25
+BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,No Feature Selection,Sensitive Learning,70,12,105,114,0.48,0.48,0.58,0.24
+BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,Best First,No Cost Sensitive,151,36,81,33,0.71,0.71,0.83,0.52
+BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,171,86,31,13,0.7,0.7,0.68,0.22
+BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,Best First,No Cost Sensitive,135,30,87,49,0.64,0.64,0.7,0.46
+BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,Best First,Sensitive Threshold,183,116,1,1,0.5,0.5,0.85,0.0
+BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,174,94,23,10,0.7,0.7,0.66,0.16
+BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,Best First,Sensitive Threshold,135,30,87,49,0.64,0.64,0.7,0.46
+BOOKKEEPER,1,8.3%,4.15%,3.76%,RandomForest,Oversampling,Best First,Sensitive Learning,183,116,1,1,0.5,0.5,0.85,0.0
+BOOKKEEPER,1,8.3%,4.15%,3.76%,NaiveBayes,Oversampling,Best First,Sensitive Learning,174,94,23,10,0.7,0.7,0.66,0.16
+BOOKKEEPER,1,8.3%,4.15%,3.76%,IBk,Oversampling,Best First,Sensitive Learning,135,30,87,49,0.64,0.64,0.7,0.46
+BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,137,18,99,47,0.68,0.68,0.85,0.57
+BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,172,84,33,12,0.73,0.73,0.77,0.24
+BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,87,16,101,97,0.51,0.51,0.67,0.3
+BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,184,111,6,0,1.0,1.0,0.86,0.06
+BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,172,85,32,12,0.73,0.73,0.77,0.23
+BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,87,16,101,97,0.51,0.51,0.67,0.3
+BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,184,111,6,0,1.0,1.0,0.86,0.06
+BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,172,85,32,12,0.73,0.73,0.77,0.23
+BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,No Feature Selection,Sensitive Learning,87,16,101,97,0.51,0.51,0.67,0.3
+BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,Best First,No Cost Sensitive,137,18,99,47,0.68,0.68,0.85,0.57
+BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,176,90,27,8,0.77,0.77,0.83,0.21
+BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,Best First,No Cost Sensitive,140,20,97,44,0.69,0.69,0.81,0.57
+BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,Best First,Sensitive Threshold,184,117,0,0,NaN,NaN,0.87,0.0
+BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,180,97,20,4,0.83,0.83,0.83,0.17
+BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,Best First,Sensitive Threshold,140,20,97,44,0.69,0.69,0.81,0.57
+BOOKKEEPER,1,7.14%,3.57%,3.76%,RandomForest,Undersampling,Best First,Sensitive Learning,184,117,0,0,NaN,NaN,0.87,0.0
+BOOKKEEPER,1,7.14%,3.57%,3.76%,NaiveBayes,Undersampling,Best First,Sensitive Learning,180,97,20,4,0.83,0.83,0.83,0.17
+BOOKKEEPER,1,7.14%,3.57%,3.76%,IBk,Undersampling,Best First,Sensitive Learning,140,20,97,44,0.69,0.69,0.81,0.57
+BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,140,11,106,44,0.71,0.71,0.85,0.63
+BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,169,83,34,15,0.69,0.69,0.76,0.23
+BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,90,15,102,94,0.52,0.52,0.68,0.32
+BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,183,109,8,1,0.89,0.89,0.87,0.08
+BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,172,84,33,12,0.73,0.73,0.75,0.24
+BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,90,15,102,94,0.52,0.52,0.68,0.32
+BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,183,109,8,1,0.89,0.89,0.87,0.08
+BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,172,84,33,12,0.73,0.73,0.75,0.24
+BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,No Feature Selection,Sensitive Learning,90,15,102,94,0.52,0.52,0.68,0.32
+BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,Best First,No Cost Sensitive,142,14,103,42,0.71,0.71,0.84,0.62
+BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,176,88,29,8,0.78,0.78,0.82,0.23
+BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,Best First,No Cost Sensitive,136,9,108,48,0.69,0.69,0.84,0.62
 BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,Best First,Sensitive Threshold,184,117,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,171,79,38,13,0.75,0.75,0.78,0.28
-BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,Best First,Sensitive Threshold,125,12,105,59,0.64,0.64,0.79,0.54
+BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,178,95,22,6,0.79,0.79,0.83,0.18
+BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,Best First,Sensitive Threshold,136,9,108,48,0.69,0.69,0.84,0.62
 BOOKKEEPER,1,8.27%,4.15%,3.76%,RandomForest,SMOTE,Best First,Sensitive Learning,184,117,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,Best First,Sensitive Learning,171,79,38,13,0.75,0.75,0.78,0.28
-BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,Best First,Sensitive Learning,125,12,105,59,0.64,0.64,0.79,0.54
-BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,238,13,68,120,0.36,0.36,0.85,0.33
-BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,298,65,16,60,0.21,0.21,0.66,0.03
-BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,230,11,70,128,0.35,0.35,0.75,0.33
-BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,353,77,4,5,0.44,0.44,0.81,0.05
-BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,300,65,16,58,0.22,0.22,0.65,0.04
-BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,230,11,70,128,0.35,0.35,0.75,0.33
-BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,353,77,4,5,0.44,0.44,0.81,0.05
-BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,300,65,16,58,0.22,0.22,0.65,0.04
-BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,No Feature Selection,Sensitive Learning,230,11,70,128,0.35,0.35,0.75,0.33
-BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,Best First,No Cost Sensitive,266,14,67,92,0.42,0.42,0.88,0.42
-BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,294,61,20,64,0.24,0.24,0.71,0.07
-BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,Best First,No Cost Sensitive,251,13,68,107,0.39,0.39,0.77,0.37
-BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,Best First,Sensitive Threshold,354,81,0,4,0.0,0.0,0.87,-0.02
-BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,299,63,18,59,0.23,0.23,0.69,0.06
-BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,Best First,Sensitive Threshold,251,13,68,107,0.39,0.39,0.77,0.37
-BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,Best First,Sensitive Learning,354,81,0,4,0.0,0.0,0.87,-0.02
-BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,Best First,Sensitive Learning,299,63,18,59,0.23,0.23,0.69,0.06
-BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,Best First,Sensitive Learning,251,13,68,107,0.39,0.39,0.77,0.37
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,231,16,65,127,0.34,0.34,0.8,0.29
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,293,64,17,65,0.21,0.21,0.66,0.03
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,212,12,69,146,0.32,0.32,0.69,0.27
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,349,72,9,9,0.5,0.5,0.78,0.12
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,299,64,17,59,0.22,0.22,0.64,0.05
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,212,12,69,146,0.32,0.32,0.69,0.27
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,349,72,9,9,0.5,0.5,0.78,0.12
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,299,64,17,59,0.22,0.22,0.64,0.05
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,No Feature Selection,Sensitive Learning,212,12,69,146,0.32,0.32,0.69,0.27
+BOOKKEEPER,1,8.27%,4.15%,3.76%,NaiveBayes,SMOTE,Best First,Sensitive Learning,178,95,22,6,0.79,0.79,0.83,0.18
+BOOKKEEPER,1,8.27%,4.15%,3.76%,IBk,SMOTE,Best First,Sensitive Learning,136,9,108,48,0.69,0.69,0.84,0.62
+BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,241,10,71,117,0.38,0.38,0.86,0.36
+BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,296,64,17,62,0.22,0.22,0.65,0.04
+BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,265,11,70,93,0.43,0.43,0.8,0.43
+BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,351,75,6,7,0.46,0.46,0.82,0.08
+BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,299,65,16,59,0.21,0.21,0.62,0.03
+BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,265,11,70,93,0.43,0.43,0.8,0.43
+BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,351,75,6,7,0.46,0.46,0.82,0.08
+BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,299,65,16,59,0.21,0.21,0.62,0.03
+BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,No Feature Selection,Sensitive Learning,265,11,70,93,0.43,0.43,0.8,0.43
+BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,Best First,No Cost Sensitive,266,16,65,92,0.41,0.41,0.88,0.4
+BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,291,58,23,67,0.26,0.26,0.71,0.09
+BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,Best First,No Cost Sensitive,245,11,70,113,0.38,0.38,0.78,0.37
+BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,Best First,Sensitive Threshold,357,80,1,1,0.5,0.5,0.88,0.02
+BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,299,63,18,59,0.23,0.23,0.7,0.06
+BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,Best First,Sensitive Threshold,245,11,70,113,0.38,0.38,0.78,0.37
+BOOKKEEPER,2,17.41%,7.92%,2.61%,RandomForest,No Sampling,Best First,Sensitive Learning,357,80,1,1,0.5,0.5,0.88,0.02
+BOOKKEEPER,2,17.41%,7.92%,2.61%,NaiveBayes,No Sampling,Best First,Sensitive Learning,299,63,18,59,0.23,0.23,0.7,0.06
+BOOKKEEPER,2,17.41%,7.92%,2.61%,IBk,No Sampling,Best First,Sensitive Learning,245,11,70,113,0.38,0.38,0.78,0.37
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,223,11,70,135,0.34,0.34,0.83,0.31
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,292,63,18,66,0.21,0.21,0.63,0.04
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,237,15,66,121,0.35,0.35,0.71,0.32
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,346,68,13,12,0.52,0.52,0.8,0.17
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,296,64,17,62,0.22,0.22,0.59,0.04
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,237,15,66,121,0.35,0.35,0.71,0.32
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,346,68,13,12,0.52,0.52,0.8,0.17
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,296,64,17,62,0.22,0.22,0.59,0.04
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,No Feature Selection,Sensitive Learning,237,15,66,121,0.35,0.35,0.71,0.32
 BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,Best First,No Cost Sensitive,226,9,72,132,0.35,0.35,0.85,0.33
 BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,273,55,26,85,0.23,0.23,0.7,0.07
 BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,Best First,No Cost Sensitive,234,10,71,124,0.36,0.36,0.74,0.34
@@ -107,141 +107,141 @@ BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,Best First,Sensitive Threshold,
 BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,Oversampling,Best First,Sensitive Learning,355,69,12,3,0.8,0.8,0.85,0.2
 BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,Oversampling,Best First,Sensitive Learning,294,62,19,64,0.23,0.23,0.68,0.06
 BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,Oversampling,Best First,Sensitive Learning,235,10,71,123,0.37,0.37,0.74,0.35
-BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,214,9,72,144,0.33,0.33,0.83,0.3
-BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,297,63,18,61,0.23,0.23,0.66,0.05
-BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,216,10,71,142,0.33,0.33,0.74,0.29
-BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,349,73,8,9,0.47,0.47,0.81,0.11
-BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,301,65,16,57,0.22,0.22,0.65,0.04
-BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,216,10,71,142,0.33,0.33,0.74,0.29
-BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,349,73,8,9,0.47,0.47,0.81,0.11
-BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,301,65,16,57,0.22,0.22,0.65,0.04
-BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,No Feature Selection,Sensitive Learning,216,10,71,142,0.33,0.33,0.74,0.29
-BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,Best First,No Cost Sensitive,223,6,75,135,0.36,0.36,0.88,0.34
-BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,291,59,22,67,0.25,0.25,0.71,0.08
-BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,Best First,No Cost Sensitive,240,10,71,118,0.38,0.38,0.77,0.36
-BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,Best First,Sensitive Threshold,355,80,1,3,0.25,0.25,0.88,0.01
-BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,299,63,18,59,0.23,0.23,0.69,0.06
-BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,Best First,Sensitive Threshold,240,10,71,118,0.38,0.38,0.77,0.36
-BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,Best First,Sensitive Learning,355,80,1,3,0.25,0.25,0.88,0.01
-BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,Best First,Sensitive Learning,299,63,18,59,0.23,0.23,0.69,0.06
-BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,Best First,Sensitive Learning,240,10,71,118,0.38,0.38,0.77,0.36
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,234,7,74,124,0.37,0.37,0.86,0.36
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,296,63,18,62,0.23,0.23,0.66,0.05
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,229,11,70,129,0.35,0.35,0.75,0.32
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,348,72,9,10,0.47,0.47,0.83,0.12
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,297,63,18,61,0.23,0.23,0.65,0.05
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,229,11,70,129,0.35,0.35,0.75,0.32
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,348,72,9,10,0.47,0.47,0.83,0.12
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,297,63,18,61,0.23,0.23,0.65,0.05
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,No Feature Selection,Sensitive Learning,229,11,70,129,0.35,0.35,0.75,0.32
+BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,220,8,73,138,0.35,0.35,0.85,0.32
+BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,295,63,18,63,0.22,0.22,0.65,0.05
+BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,248,9,72,110,0.4,0.4,0.79,0.39
+BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,349,75,6,9,0.4,0.4,0.82,0.07
+BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,299,65,16,59,0.21,0.21,0.62,0.03
+BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,248,9,72,110,0.4,0.4,0.79,0.39
+BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,349,75,6,9,0.4,0.4,0.82,0.07
+BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,299,65,16,59,0.21,0.21,0.62,0.03
+BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,No Feature Selection,Sensitive Learning,248,9,72,110,0.4,0.4,0.79,0.39
+BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,Best First,No Cost Sensitive,222,7,74,136,0.35,0.35,0.88,0.33
+BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,281,56,25,77,0.25,0.25,0.71,0.09
+BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,Best First,No Cost Sensitive,231,12,69,127,0.35,0.35,0.75,0.32
+BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,Best First,Sensitive Threshold,357,80,1,1,0.5,0.5,0.88,0.02
+BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,298,61,20,60,0.25,0.25,0.69,0.08
+BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,Best First,Sensitive Threshold,231,12,69,127,0.35,0.35,0.75,0.32
+BOOKKEEPER,2,15.83%,7.92%,2.61%,RandomForest,Undersampling,Best First,Sensitive Learning,357,80,1,1,0.5,0.5,0.88,0.02
+BOOKKEEPER,2,15.83%,7.92%,2.61%,NaiveBayes,Undersampling,Best First,Sensitive Learning,298,61,20,60,0.25,0.25,0.69,0.08
+BOOKKEEPER,2,15.83%,7.92%,2.61%,IBk,Undersampling,Best First,Sensitive Learning,231,12,69,127,0.35,0.35,0.75,0.32
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,232,8,73,126,0.37,0.37,0.87,0.35
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,294,63,18,64,0.22,0.22,0.65,0.04
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,265,10,71,93,0.43,0.43,0.81,0.44
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,349,68,13,9,0.59,0.59,0.84,0.19
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,296,63,18,62,0.23,0.23,0.62,0.05
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,265,10,71,93,0.43,0.43,0.81,0.44
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,349,68,13,9,0.59,0.59,0.84,0.19
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,296,63,18,62,0.23,0.23,0.62,0.05
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,No Feature Selection,Sensitive Learning,265,10,71,93,0.43,0.43,0.81,0.44
 BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,Best First,No Cost Sensitive,238,8,73,120,0.38,0.38,0.89,0.37
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,254,48,33,104,0.24,0.24,0.7,0.09
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,Best First,No Cost Sensitive,242,5,76,116,0.4,0.4,0.8,0.4
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,Best First,Sensitive Threshold,354,69,12,4,0.75,0.75,0.89,0.2
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,281,60,21,77,0.21,0.21,0.65,0.04
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,Best First,Sensitive Threshold,243,5,76,115,0.4,0.4,0.8,0.4
-BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,Best First,Sensitive Learning,354,69,12,4,0.75,0.75,0.89,0.2
-BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,Best First,Sensitive Learning,281,60,21,77,0.21,0.21,0.65,0.04
-BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,Best First,Sensitive Learning,243,5,76,115,0.4,0.4,0.8,0.4
-BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,325,32,79,3,0.96,0.96,0.93,0.77
-BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,328,111,0,0,NaN,NaN,0.92,0.0
-BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,312,35,76,16,0.83,0.83,0.82,0.67
-BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.93,0.0
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,256,47,34,102,0.25,0.25,0.7,0.11
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,Best First,No Cost Sensitive,243,5,76,115,0.4,0.4,0.81,0.4
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,Best First,Sensitive Threshold,354,72,9,4,0.69,0.69,0.89,0.15
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,286,60,21,72,0.23,0.23,0.66,0.05
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,Best First,Sensitive Threshold,244,5,76,114,0.4,0.4,0.81,0.41
+BOOKKEEPER,2,18.98%,9.49%,2.61%,RandomForest,SMOTE,Best First,Sensitive Learning,354,72,9,4,0.69,0.69,0.89,0.15
+BOOKKEEPER,2,18.98%,9.49%,2.61%,NaiveBayes,SMOTE,Best First,Sensitive Learning,286,60,21,72,0.23,0.23,0.66,0.05
+BOOKKEEPER,2,18.98%,9.49%,2.61%,IBk,SMOTE,Best First,Sensitive Learning,244,5,76,114,0.4,0.4,0.81,0.41
+BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,325,27,84,3,0.97,0.97,0.92,0.81
+BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,328,111,0,0,NaN,NaN,0.91,0.0
+BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,318,28,83,10,0.89,0.89,0.86,0.76
+BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.91,0.0
 BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.91,0.0
-BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,312,35,76,16,0.83,0.83,0.82,0.67
-BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.93,0.0
+BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,318,28,83,10,0.89,0.89,0.86,0.76
+BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.91,0.0
 BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.91,0.0
-BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,No Feature Selection,Sensitive Learning,312,35,76,16,0.83,0.83,0.82,0.67
-BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,Best First,No Cost Sensitive,325,28,83,3,0.97,0.97,0.91,0.8
-BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,328,50,61,0,1.0,1.0,0.92,0.65
-BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,Best First,No Cost Sensitive,299,24,87,29,0.75,0.75,0.87,0.69
+BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,No Feature Selection,Sensitive Learning,318,28,83,10,0.89,0.89,0.86,0.76
+BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,Best First,No Cost Sensitive,328,30,81,0,1.0,1.0,0.91,0.8
+BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,328,111,0,0,NaN,NaN,0.92,0.0
+BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,Best First,No Cost Sensitive,328,30,81,0,1.0,1.0,0.86,0.8
 BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,Best First,Sensitive Threshold,328,111,0,0,NaN,NaN,0.9,0.0
 BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,328,111,0,0,NaN,NaN,0.91,0.0
-BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,Best First,Sensitive Threshold,299,24,87,29,0.75,0.75,0.87,0.69
+BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,Best First,Sensitive Threshold,328,30,81,0,1.0,1.0,0.86,0.8
 BOOKKEEPER,3,31.53%,10.52%,3.57%,RandomForest,No Sampling,Best First,Sensitive Learning,328,111,0,0,NaN,NaN,0.9,0.0
 BOOKKEEPER,3,31.53%,10.52%,3.57%,NaiveBayes,No Sampling,Best First,Sensitive Learning,328,111,0,0,NaN,NaN,0.91,0.0
-BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,Best First,Sensitive Learning,299,24,87,29,0.75,0.75,0.87,0.69
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,306,37,74,22,0.77,0.77,0.91,0.63
+BOOKKEEPER,3,31.53%,10.52%,3.57%,IBk,No Sampling,Best First,Sensitive Learning,328,30,81,0,1.0,1.0,0.86,0.8
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,311,33,78,17,0.82,0.82,0.9,0.68
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,328,111,0,0,NaN,NaN,0.87,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,302,39,72,26,0.73,0.73,0.8,0.59
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,327,93,18,1,0.95,0.95,0.9,0.22
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,312,40,71,16,0.82,0.82,0.79,0.64
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,328,84,27,0,1.0,1.0,0.91,0.32
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,303,39,72,25,0.74,0.74,0.8,0.6
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,327,93,18,1,0.95,0.95,0.9,0.22
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,312,40,71,16,0.82,0.82,0.79,0.64
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,328,84,27,0,1.0,1.0,0.91,0.32
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.86,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,No Feature Selection,Sensitive Learning,303,39,72,25,0.74,0.74,0.8,0.6
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,Best First,No Cost Sensitive,269,24,87,59,0.6,0.6,0.87,0.55
-BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,307,47,64,21,0.75,0.75,0.87,0.56
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,Best First,No Cost Sensitive,277,22,89,51,0.64,0.64,0.81,0.59
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,Best First,Sensitive Threshold,321,58,53,7,0.88,0.88,0.88,0.54
-BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,325,104,7,3,0.7,0.7,0.86,0.08
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,Best First,Sensitive Threshold,278,22,89,50,0.64,0.64,0.81,0.6
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,Best First,Sensitive Learning,321,58,53,7,0.88,0.88,0.88,0.54
-BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,Best First,Sensitive Learning,325,104,7,3,0.7,0.7,0.86,0.08
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,Best First,Sensitive Learning,278,22,89,50,0.64,0.64,0.81,0.6
-BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,268,20,91,60,0.6,0.6,0.91,0.57
-BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,327,111,0,1,0.0,0.0,0.87,0.0
-BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,248,14,97,80,0.55,0.55,0.81,0.53
-BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.91,0.0
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,No Feature Selection,Sensitive Learning,312,40,71,16,0.82,0.82,0.79,0.64
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,Best First,No Cost Sensitive,277,25,86,51,0.63,0.63,0.86,0.57
+BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,318,84,27,10,0.73,0.73,0.87,0.27
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,Best First,No Cost Sensitive,296,33,78,32,0.71,0.71,0.78,0.61
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,Best First,Sensitive Threshold,325,55,56,3,0.95,0.95,0.86,0.59
+BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,325,107,4,3,0.57,0.57,0.86,0.04
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,Best First,Sensitive Threshold,297,33,78,31,0.72,0.72,0.78,0.61
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,Oversampling,Best First,Sensitive Learning,325,55,56,3,0.95,0.95,0.86,0.59
+BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,Oversampling,Best First,Sensitive Learning,325,107,4,3,0.57,0.57,0.86,0.04
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,Oversampling,Best First,Sensitive Learning,297,33,78,31,0.72,0.72,0.78,0.61
+BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,297,26,85,31,0.73,0.73,0.9,0.66
+BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,327,111,0,1,0.0,0.0,0.88,0.0
+BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,294,27,84,34,0.71,0.71,0.82,0.64
+BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.89,0.0
 BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,327,111,0,1,0.0,0.0,0.86,0.0
-BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,248,14,97,80,0.55,0.55,0.81,0.53
-BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.91,0.0
+BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,295,27,84,33,0.72,0.72,0.82,0.64
+BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.89,0.0
 BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,327,111,0,1,0.0,0.0,0.86,0.0
-BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,No Feature Selection,Sensitive Learning,248,14,97,80,0.55,0.55,0.81,0.53
-BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,Best First,No Cost Sensitive,260,19,92,68,0.58,0.58,0.89,0.54
-BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,312,85,26,16,0.62,0.62,0.87,0.23
-BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,Best First,No Cost Sensitive,260,18,93,68,0.58,0.58,0.82,0.55
-BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,Best First,Sensitive Threshold,328,106,5,0,1.0,1.0,0.88,0.07
-BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,324,108,3,4,0.43,0.43,0.86,0.02
-BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,Best First,Sensitive Threshold,262,18,93,66,0.58,0.58,0.82,0.56
-BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,Best First,Sensitive Learning,328,106,5,0,1.0,1.0,0.88,0.07
-BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,Best First,Sensitive Learning,324,108,3,4,0.43,0.43,0.86,0.02
-BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,Best First,Sensitive Learning,262,18,93,66,0.58,0.58,0.82,0.56
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,320,26,85,8,0.91,0.91,0.93,0.78
+BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,No Feature Selection,Sensitive Learning,295,27,84,33,0.72,0.72,0.82,0.64
+BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,Best First,No Cost Sensitive,188,16,95,140,0.4,0.4,0.88,0.31
+BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,291,23,88,37,0.7,0.7,0.88,0.65
+BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,Best First,No Cost Sensitive,291,23,88,37,0.7,0.7,0.88,0.65
+BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,Best First,Sensitive Threshold,328,92,19,0,1.0,1.0,0.88,0.24
+BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,328,111,0,0,NaN,NaN,0.87,0.0
+BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,Best First,Sensitive Threshold,302,28,83,26,0.76,0.76,0.88,0.67
+BOOKKEEPER,3,21.04%,10.52%,3.57%,RandomForest,Undersampling,Best First,Sensitive Learning,328,92,19,0,1.0,1.0,0.88,0.24
+BOOKKEEPER,3,21.04%,10.52%,3.57%,NaiveBayes,Undersampling,Best First,Sensitive Learning,328,111,0,0,NaN,NaN,0.87,0.0
+BOOKKEEPER,3,21.04%,10.52%,3.57%,IBk,Undersampling,Best First,Sensitive Learning,302,28,83,26,0.76,0.76,0.88,0.67
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,323,29,82,5,0.94,0.94,0.93,0.78
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,328,111,0,0,NaN,NaN,0.91,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,310,28,83,18,0.82,0.82,0.85,0.71
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,328,94,17,0,1.0,1.0,0.94,0.21
-BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.92,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,310,28,83,18,0.82,0.82,0.85,0.71
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,328,94,17,0,1.0,1.0,0.94,0.21
-BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.92,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,No Feature Selection,Sensitive Learning,310,28,83,18,0.82,0.82,0.85,0.71
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,Best First,No Cost Sensitive,327,31,80,1,0.99,0.99,0.91,0.79
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,318,27,84,10,0.89,0.89,0.86,0.77
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,328,95,16,0,1.0,1.0,0.92,0.2
+BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,328,111,0,0,NaN,NaN,0.91,0.0
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,318,27,84,10,0.89,0.89,0.86,0.77
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,328,95,16,0,1.0,1.0,0.92,0.2
+BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,328,111,0,0,NaN,NaN,0.91,0.0
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,No Feature Selection,Sensitive Learning,318,27,84,10,0.89,0.89,0.86,0.77
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,Best First,No Cost Sensitive,327,29,82,1,0.99,0.99,0.91,0.8
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,328,101,10,0,1.0,1.0,0.9,0.13
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,Best First,No Cost Sensitive,321,30,81,7,0.92,0.92,0.88,0.76
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,Best First,Sensitive Threshold,328,71,40,0,1.0,1.0,0.91,0.46
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,Best First,No Cost Sensitive,322,29,82,6,0.93,0.93,0.88,0.77
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,Best First,Sensitive Threshold,328,64,47,0,1.0,1.0,0.9,0.52
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,328,111,0,0,NaN,NaN,0.9,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,Best First,Sensitive Threshold,321,30,81,7,0.92,0.92,0.88,0.76
-BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,Best First,Sensitive Learning,328,71,40,0,1.0,1.0,0.91,0.46
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,Best First,Sensitive Threshold,322,29,82,6,0.93,0.93,0.88,0.77
+BOOKKEEPER,3,42.02%,21.01%,3.57%,RandomForest,SMOTE,Best First,Sensitive Learning,328,64,47,0,1.0,1.0,0.9,0.52
 BOOKKEEPER,3,42.02%,21.01%,3.57%,NaiveBayes,SMOTE,Best First,Sensitive Learning,328,111,0,0,NaN,NaN,0.9,0.0
-BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,Best First,Sensitive Learning,321,30,81,7,0.92,0.92,0.88,0.76
-BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,461,22,104,2,0.98,0.98,0.93,0.87
-BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,411,126,0,52,0.0,0.0,0.64,-0.14
-BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,458,21,105,5,0.95,0.95,0.91,0.86
+BOOKKEEPER,3,42.02%,21.01%,3.57%,IBk,SMOTE,Best First,Sensitive Learning,322,29,82,6,0.93,0.93,0.88,0.77
+BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,461,21,105,2,0.98,0.98,0.92,0.88
+BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,418,126,0,45,0.0,0.0,0.7,-0.13
+BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,459,21,105,4,0.96,0.96,0.91,0.87
 BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,463,126,0,0,NaN,NaN,0.93,0.0
-BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,418,126,0,45,0.0,0.0,0.64,-0.13
-BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,458,21,105,5,0.95,0.95,0.91,0.86
+BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,421,126,0,42,0.0,0.0,0.66,-0.12
+BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,459,21,105,4,0.96,0.96,0.91,0.87
 BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,463,126,0,0,NaN,NaN,0.93,0.0
-BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,418,126,0,45,0.0,0.0,0.64,-0.13
-BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,No Feature Selection,Sensitive Learning,458,21,105,5,0.95,0.95,0.91,0.86
-BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,Best First,No Cost Sensitive,451,23,103,12,0.9,0.9,0.9,0.82
-BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,463,66,60,0,1.0,1.0,0.85,0.59
-BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,Best First,No Cost Sensitive,450,23,103,13,0.89,0.89,0.91,0.81
+BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,421,126,0,42,0.0,0.0,0.66,-0.12
+BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,No Feature Selection,Sensitive Learning,459,21,105,4,0.96,0.96,0.91,0.87
+BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,Best First,No Cost Sensitive,460,23,103,3,0.97,0.97,0.91,0.86
+BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,411,126,0,52,0.0,0.0,0.75,-0.14
+BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,Best First,No Cost Sensitive,414,23,103,49,0.68,0.68,0.89,0.66
 BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,Best First,Sensitive Threshold,463,114,12,0,1.0,1.0,0.91,0.14
-BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,463,126,0,0,NaN,NaN,0.64,0.0
-BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,Best First,Sensitive Threshold,452,23,103,11,0.9,0.9,0.91,0.82
+BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,421,126,0,42,0.0,0.0,0.7,-0.12
+BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,Best First,Sensitive Threshold,423,23,103,40,0.72,0.72,0.89,0.7
 BOOKKEEPER,4,45.66%,14.09%,4.05%,RandomForest,No Sampling,Best First,Sensitive Learning,463,114,12,0,1.0,1.0,0.91,0.14
-BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,Best First,Sensitive Learning,463,126,0,0,NaN,NaN,0.64,0.0
-BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,Best First,Sensitive Learning,452,23,103,11,0.9,0.9,0.91,0.82
-BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,442,22,104,21,0.83,0.83,0.91,0.78
-BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,401,126,0,62,0.0,0.0,0.62,-0.16
-BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,440,21,105,23,0.82,0.82,0.9,0.78
-BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,463,69,57,0,1.0,1.0,0.91,0.56
-BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,410,126,0,53,0.0,0.0,0.6,-0.15
-BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,445,21,105,18,0.85,0.85,0.9,0.8
-BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,463,69,57,0,1.0,1.0,0.91,0.56
-BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,410,126,0,53,0.0,0.0,0.6,-0.15
-BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,No Feature Selection,Sensitive Learning,445,21,105,18,0.85,0.85,0.9,0.8
+BOOKKEEPER,4,45.66%,14.09%,4.05%,NaiveBayes,No Sampling,Best First,Sensitive Learning,421,126,0,42,0.0,0.0,0.7,-0.12
+BOOKKEEPER,4,45.66%,14.09%,4.05%,IBk,No Sampling,Best First,Sensitive Learning,423,23,103,40,0.72,0.72,0.89,0.7
+BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,451,23,103,12,0.9,0.9,0.9,0.82
+BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,408,126,0,55,0.0,0.0,0.67,-0.15
+BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,443,22,104,20,0.84,0.84,0.89,0.79
+BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,463,65,61,0,1.0,1.0,0.9,0.6
+BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,414,126,0,49,0.0,0.0,0.63,-0.14
+BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,443,22,104,20,0.84,0.84,0.89,0.79
+BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,463,65,61,0,1.0,1.0,0.9,0.6
+BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,414,126,0,49,0.0,0.0,0.63,-0.14
+BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,No Feature Selection,Sensitive Learning,443,22,104,20,0.84,0.84,0.89,0.79
 BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,Best First,No Cost Sensitive,245,25,101,218,0.32,0.32,0.86,0.21
 BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,421,29,97,42,0.7,0.7,0.86,0.65
 BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,Best First,No Cost Sensitive,421,29,97,42,0.7,0.7,0.86,0.65
@@ -251,141 +251,141 @@ BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,Best First,Sensitive Threshold
 BOOKKEEPER,4,63.06%,31.53%,4.05%,RandomForest,Oversampling,Best First,Sensitive Learning,459,57,69,4,0.95,0.95,0.86,0.64
 BOOKKEEPER,4,63.06%,31.53%,4.05%,NaiveBayes,Oversampling,Best First,Sensitive Learning,463,122,4,0,1.0,1.0,0.8,0.05
 BOOKKEEPER,4,63.06%,31.53%,4.05%,IBk,Oversampling,Best First,Sensitive Learning,454,43,83,9,0.9,0.9,0.87,0.71
-BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,408,19,107,55,0.66,0.66,0.91,0.66
-BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,413,126,0,50,0.0,0.0,0.63,-0.14
-BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,364,16,110,99,0.53,0.53,0.83,0.53
-BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,463,120,6,0,1.0,1.0,0.9,0.07
-BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,420,126,0,43,0.0,0.0,0.59,-0.12
-BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,369,16,110,94,0.54,0.54,0.83,0.55
-BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,463,120,6,0,1.0,1.0,0.9,0.07
-BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,420,126,0,43,0.0,0.0,0.59,-0.12
-BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,No Feature Selection,Sensitive Learning,369,16,110,94,0.54,0.54,0.83,0.55
-BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,Best First,No Cost Sensitive,309,21,105,154,0.41,0.41,0.89,0.36
-BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,440,54,72,23,0.76,0.76,0.83,0.57
-BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,Best First,No Cost Sensitive,330,19,107,133,0.45,0.45,0.81,0.42
-BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,Best First,Sensitive Threshold,463,77,49,0,1.0,1.0,0.89,0.5
-BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,458,121,5,5,0.5,0.5,0.74,0.04
-BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,Best First,Sensitive Threshold,337,19,107,126,0.46,0.46,0.81,0.44
-BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,Best First,Sensitive Learning,463,77,49,0,1.0,1.0,0.89,0.5
-BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,Best First,Sensitive Learning,458,121,5,5,0.5,0.5,0.74,0.04
-BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,Best First,Sensitive Learning,337,19,107,126,0.46,0.46,0.81,0.44
-BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,461,22,104,2,0.98,0.98,0.93,0.87
-BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,396,126,0,67,0.0,0.0,0.65,-0.17
-BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,457,21,105,6,0.95,0.95,0.91,0.86
-BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,463,81,45,0,1.0,1.0,0.93,0.47
-BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,404,126,0,59,0.0,0.0,0.64,-0.16
-BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,457,21,105,6,0.95,0.95,0.91,0.86
-BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,463,81,45,0,1.0,1.0,0.93,0.47
-BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,404,126,0,59,0.0,0.0,0.64,-0.16
-BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,No Feature Selection,Sensitive Learning,457,21,105,6,0.95,0.95,0.91,0.86
-BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,Best First,No Cost Sensitive,357,20,106,106,0.5,0.5,0.92,0.49
-BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,418,36,90,45,0.67,0.67,0.87,0.6
+BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,438,19,107,25,0.81,0.81,0.91,0.78
+BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,419,126,0,44,0.0,0.0,0.7,-0.12
+BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,418,18,108,45,0.71,0.71,0.88,0.7
+BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,463,116,10,0,1.0,1.0,0.9,0.12
+BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,421,126,0,42,0.0,0.0,0.64,-0.12
+BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,418,18,108,45,0.71,0.71,0.88,0.7
+BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,463,116,10,0,1.0,1.0,0.9,0.12
+BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,421,126,0,42,0.0,0.0,0.64,-0.12
+BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,No Feature Selection,Sensitive Learning,418,18,108,45,0.71,0.71,0.88,0.7
+BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,Best First,No Cost Sensitive,314,18,108,149,0.42,0.42,0.9,0.39
+BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,441,51,75,22,0.77,0.77,0.86,0.6
+BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,Best First,No Cost Sensitive,372,18,108,91,0.54,0.54,0.83,0.55
+BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,Best First,Sensitive Threshold,463,82,44,0,1.0,1.0,0.89,0.46
+BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,458,121,5,5,0.5,0.5,0.8,0.04
+BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,Best First,Sensitive Threshold,385,18,108,78,0.58,0.58,0.83,0.59
+BOOKKEEPER,4,28.19%,14.09%,4.05%,RandomForest,Undersampling,Best First,Sensitive Learning,463,82,44,0,1.0,1.0,0.89,0.46
+BOOKKEEPER,4,28.19%,14.09%,4.05%,NaiveBayes,Undersampling,Best First,Sensitive Learning,458,121,5,5,0.5,0.5,0.8,0.04
+BOOKKEEPER,4,28.19%,14.09%,4.05%,IBk,Undersampling,Best First,Sensitive Learning,385,18,108,78,0.58,0.58,0.83,0.59
+BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,461,20,106,2,0.98,0.98,0.92,0.88
+BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,406,124,2,57,0.03,0.03,0.71,-0.13
+BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,456,21,105,7,0.94,0.94,0.91,0.85
+BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,463,76,50,0,1.0,1.0,0.91,0.51
+BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,417,126,0,46,0.0,0.0,0.67,-0.13
+BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,456,21,105,7,0.94,0.94,0.91,0.85
+BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,463,76,50,0,1.0,1.0,0.91,0.51
+BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,417,126,0,46,0.0,0.0,0.67,-0.13
+BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,No Feature Selection,Sensitive Learning,456,21,105,7,0.94,0.94,0.91,0.85
+BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,Best First,No Cost Sensitive,386,20,106,77,0.58,0.58,0.92,0.58
+BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,348,34,92,115,0.44,0.44,0.87,0.39
 BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,Best First,No Cost Sensitive,311,21,105,152,0.41,0.41,0.76,0.37
-BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,Best First,Sensitive Threshold,463,69,57,0,1.0,1.0,0.92,0.56
-BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,463,113,13,0,1.0,1.0,0.82,0.15
+BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,Best First,Sensitive Threshold,463,68,58,0,1.0,1.0,0.92,0.57
+BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,463,110,16,0,1.0,1.0,0.82,0.19
 BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,Best First,Sensitive Threshold,311,21,105,152,0.41,0.41,0.76,0.37
-BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,Best First,Sensitive Learning,463,69,57,0,1.0,1.0,0.92,0.56
-BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,Best First,Sensitive Learning,463,113,13,0,1.0,1.0,0.82,0.15
+BOOKKEEPER,4,63.1%,31.53%,4.05%,RandomForest,SMOTE,Best First,Sensitive Learning,463,68,58,0,1.0,1.0,0.92,0.57
+BOOKKEEPER,4,63.1%,31.53%,4.05%,NaiveBayes,SMOTE,Best First,Sensitive Learning,463,110,16,0,1.0,1.0,0.82,0.19
 BOOKKEEPER,4,63.1%,31.53%,4.05%,IBk,SMOTE,Best First,Sensitive Learning,311,21,105,152,0.41,0.41,0.76,0.37
-BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,326,6,92,22,0.81,0.81,0.99,0.83
+BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,327,4,94,21,0.82,0.82,0.99,0.85
 BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,345,92,6,3,0.67,0.67,0.96,0.08
-BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,321,3,95,27,0.78,0.78,0.95,0.82
+BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,322,4,94,26,0.78,0.78,0.94,0.82
 BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,348,95,3,0,1.0,1.0,0.99,0.05
-BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,346,96,2,2,0.5,0.5,0.95,0.02
-BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,321,3,95,27,0.78,0.78,0.95,0.82
+BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,346,95,3,2,0.6,0.6,0.95,0.04
+BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,322,4,94,26,0.78,0.78,0.94,0.82
 BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,348,95,3,0,1.0,1.0,0.99,0.05
-BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,346,96,2,2,0.5,0.5,0.95,0.02
-BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,No Feature Selection,Sensitive Learning,321,3,95,27,0.78,0.78,0.95,0.82
-BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,Best First,No Cost Sensitive,328,8,90,20,0.82,0.82,0.99,0.82
-BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,342,20,78,6,0.93,0.93,0.99,0.82
-BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,Best First,No Cost Sensitive,328,7,91,20,0.82,0.82,0.98,0.83
-BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,Best First,Sensitive Threshold,348,73,25,0,1.0,1.0,0.99,0.35
+BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,346,95,3,2,0.6,0.6,0.95,0.04
+BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,No Feature Selection,Sensitive Learning,322,4,94,26,0.78,0.78,0.94,0.82
+BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,Best First,No Cost Sensitive,331,8,90,17,0.84,0.84,0.99,0.84
+BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,334,13,85,14,0.86,0.86,0.99,0.82
+BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,Best First,No Cost Sensitive,333,11,87,15,0.85,0.85,0.99,0.83
+BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,Best First,Sensitive Threshold,348,66,32,0,1.0,1.0,0.98,0.43
 BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,348,98,0,0,NaN,NaN,0.99,0.0
-BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,Best First,Sensitive Threshold,328,7,91,20,0.82,0.82,0.98,0.83
-BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,Best First,Sensitive Learning,348,73,25,0,1.0,1.0,0.99,0.35
+BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,Best First,Sensitive Threshold,347,20,78,1,0.99,0.99,0.99,0.85
+BOOKKEEPER,5,64.61%,18.15%,3.15%,RandomForest,No Sampling,Best First,Sensitive Learning,348,66,32,0,1.0,1.0,0.98,0.43
 BOOKKEEPER,5,64.61%,18.15%,3.15%,NaiveBayes,No Sampling,Best First,Sensitive Learning,348,98,0,0,NaN,NaN,0.99,0.0
-BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,Best First,Sensitive Learning,328,7,91,20,0.82,0.82,0.98,0.83
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,309,3,95,39,0.71,0.71,0.98,0.76
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,342,89,9,6,0.6,0.6,0.95,0.11
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,310,4,94,38,0.71,0.71,0.92,0.76
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,338,17,81,10,0.89,0.89,0.99,0.82
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,345,92,6,3,0.67,0.67,0.94,0.08
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,311,4,94,37,0.72,0.72,0.92,0.76
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,338,17,81,10,0.89,0.89,0.99,0.82
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,345,92,6,3,0.67,0.67,0.94,0.08
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,No Feature Selection,Sensitive Learning,311,4,94,37,0.72,0.72,0.92,0.76
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,Best First,No Cost Sensitive,313,5,93,35,0.73,0.73,0.97,0.76
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,265,2,96,83,0.54,0.54,0.97,0.57
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,Best First,No Cost Sensitive,313,5,93,35,0.73,0.73,0.95,0.76
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,Best First,Sensitive Threshold,333,14,84,15,0.85,0.85,0.97,0.81
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,347,39,59,1,0.98,0.98,0.96,0.7
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,Best First,Sensitive Threshold,316,6,92,32,0.74,0.74,0.95,0.77
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,Best First,Sensitive Learning,333,14,84,15,0.85,0.85,0.97,0.81
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,Best First,Sensitive Learning,347,39,59,1,0.98,0.98,0.96,0.7
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,Best First,Sensitive Learning,316,6,92,32,0.74,0.74,0.95,0.77
-BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,283,3,95,65,0.59,0.59,0.99,0.64
-BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,346,95,3,2,0.6,0.6,0.94,0.04
-BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,291,2,96,57,0.63,0.63,0.91,0.68
-BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,348,48,50,0,1.0,1.0,0.98,0.62
+BOOKKEEPER,5,64.61%,18.15%,3.15%,IBk,No Sampling,Best First,Sensitive Learning,347,20,78,1,0.99,0.99,0.99,0.85
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,307,3,95,41,0.7,0.7,0.98,0.75
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,340,81,17,8,0.68,0.68,0.95,0.21
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,306,4,94,42,0.69,0.69,0.91,0.74
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,339,19,79,9,0.9,0.9,0.98,0.81
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,344,92,6,4,0.6,0.6,0.95,0.07
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,306,4,94,42,0.69,0.69,0.91,0.74
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,339,19,79,9,0.9,0.9,0.98,0.81
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,344,92,6,4,0.6,0.6,0.95,0.07
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,No Feature Selection,Sensitive Learning,306,4,94,42,0.69,0.69,0.91,0.74
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,Best First,No Cost Sensitive,269,2,96,79,0.55,0.55,0.97,0.59
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,292,6,92,56,0.62,0.62,0.97,0.66
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,Best First,No Cost Sensitive,292,6,92,56,0.62,0.62,0.97,0.66
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,Best First,Sensitive Threshold,340,17,81,8,0.91,0.91,0.97,0.83
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,Best First,Sensitive Threshold,347,56,42,1,0.98,0.98,0.96,0.53
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,Best First,Sensitive Threshold,339,15,83,9,0.9,0.9,0.97,0.84
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,Oversampling,Best First,Sensitive Learning,340,17,81,8,0.91,0.91,0.97,0.83
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,Oversampling,Best First,Sensitive Learning,347,56,42,1,0.98,0.98,0.96,0.53
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,Oversampling,Best First,Sensitive Learning,339,15,83,9,0.9,0.9,0.97,0.84
+BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,281,0,98,67,0.59,0.59,0.99,0.65
+BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,345,95,3,3,0.5,0.5,0.94,0.03
+BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,282,3,95,66,0.59,0.59,0.89,0.63
+BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,348,46,52,0,1.0,1.0,0.98,0.64
 BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,346,96,2,2,0.5,0.5,0.93,0.02
-BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,291,2,96,57,0.63,0.63,0.91,0.68
-BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,348,48,50,0,1.0,1.0,0.98,0.62
+BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,282,3,95,66,0.59,0.59,0.89,0.63
+BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,348,46,52,0,1.0,1.0,0.98,0.64
 BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,346,96,2,2,0.5,0.5,0.93,0.02
-BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,No Feature Selection,Sensitive Learning,291,2,96,57,0.63,0.63,0.91,0.68
-BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,Best First,No Cost Sensitive,282,4,94,66,0.59,0.59,0.97,0.63
-BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,232,0,98,116,0.46,0.46,0.97,0.47
-BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,Best First,No Cost Sensitive,283,5,93,65,0.59,0.59,0.92,0.62
-BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,Best First,Sensitive Threshold,343,30,68,5,0.93,0.93,0.97,0.75
+BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,No Feature Selection,Sensitive Learning,282,3,95,66,0.59,0.59,0.89,0.63
+BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,Best First,No Cost Sensitive,285,0,98,63,0.61,0.61,0.98,0.67
+BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,233,0,98,115,0.46,0.46,0.97,0.47
+BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,Best First,No Cost Sensitive,293,0,98,55,0.64,0.64,0.92,0.7
+BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,Best First,Sensitive Threshold,346,33,65,2,0.97,0.97,0.98,0.74
 BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,348,98,0,0,NaN,NaN,0.95,0.0
-BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,Best First,Sensitive Threshold,286,5,93,62,0.6,0.6,0.92,0.64
-BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,Best First,Sensitive Learning,343,30,68,5,0.93,0.93,0.97,0.75
+BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,Best First,Sensitive Threshold,293,1,97,55,0.64,0.64,0.92,0.69
+BOOKKEEPER,5,36.29%,18.15%,3.15%,RandomForest,Undersampling,Best First,Sensitive Learning,346,33,65,2,0.97,0.97,0.98,0.74
 BOOKKEEPER,5,36.29%,18.15%,3.15%,NaiveBayes,Undersampling,Best First,Sensitive Learning,348,98,0,0,NaN,NaN,0.95,0.0
-BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,Best First,Sensitive Learning,286,5,93,62,0.6,0.6,0.92,0.64
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,322,3,95,26,0.79,0.79,0.99,0.83
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,342,89,9,6,0.6,0.6,0.96,0.11
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,321,3,95,27,0.78,0.78,0.95,0.82
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,348,34,64,0,1.0,1.0,0.99,0.75
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,345,92,6,3,0.67,0.67,0.96,0.08
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,321,3,95,27,0.78,0.78,0.95,0.82
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,348,34,64,0,1.0,1.0,0.99,0.75
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,345,92,6,3,0.67,0.67,0.96,0.08
-BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,No Feature Selection,Sensitive Learning,321,3,95,27,0.78,0.78,0.95,0.82
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,Best First,No Cost Sensitive,314,1,97,34,0.74,0.74,0.99,0.8
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,317,4,94,31,0.75,0.75,0.98,0.79
+BOOKKEEPER,5,36.29%,18.15%,3.15%,IBk,Undersampling,Best First,Sensitive Learning,293,1,97,55,0.64,0.64,0.92,0.69
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,323,4,94,25,0.79,0.79,0.99,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,339,77,21,9,0.7,0.7,0.95,0.25
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,322,4,94,26,0.78,0.78,0.94,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,346,24,74,2,0.97,0.97,0.99,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,345,91,7,3,0.7,0.7,0.96,0.09
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,322,4,94,26,0.78,0.78,0.94,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,346,24,74,2,0.97,0.97,0.99,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,345,91,7,3,0.7,0.7,0.96,0.09
+BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,No Feature Selection,Sensitive Learning,322,4,94,26,0.78,0.78,0.94,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,Best First,No Cost Sensitive,316,1,97,32,0.75,0.75,0.99,0.81
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,314,3,95,34,0.74,0.74,0.98,0.78
 BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,Best First,No Cost Sensitive,323,3,95,25,0.79,0.79,0.95,0.83
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,Best First,Sensitive Threshold,341,22,76,7,0.92,0.92,0.99,0.8
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,345,60,38,3,0.93,0.93,0.98,0.48
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,Best First,Sensitive Threshold,338,17,81,10,0.89,0.89,0.99,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,345,62,36,3,0.92,0.92,0.98,0.46
 BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,Best First,Sensitive Threshold,323,3,95,25,0.79,0.79,0.95,0.83
-BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,Best First,Sensitive Learning,341,22,76,7,0.92,0.92,0.99,0.8
-BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,Best First,Sensitive Learning,345,60,38,3,0.93,0.93,0.98,0.48
+BOOKKEEPER,5,92.92%,46.46%,3.15%,RandomForest,SMOTE,Best First,Sensitive Learning,338,17,81,10,0.89,0.89,0.99,0.82
+BOOKKEEPER,5,92.92%,46.46%,3.15%,NaiveBayes,SMOTE,Best First,Sensitive Learning,345,62,36,3,0.92,0.92,0.98,0.46
 BOOKKEEPER,5,92.92%,46.46%,3.15%,IBk,SMOTE,Best First,Sensitive Learning,323,3,95,25,0.79,0.79,0.95,0.83
-BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,521,27,94,12,0.89,0.89,0.95,0.79
-BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,529,118,3,4,0.43,0.43,0.94,0.03
-BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,499,23,98,34,0.74,0.74,0.88,0.72
-BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,533,114,7,0,1.0,1.0,0.96,0.09
-BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,530,118,3,3,0.5,0.5,0.91,0.03
-BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,500,23,98,33,0.75,0.75,0.88,0.72
-BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,533,114,7,0,1.0,1.0,0.96,0.09
-BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,530,118,3,3,0.5,0.5,0.91,0.03
-BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,No Feature Selection,Sensitive Learning,500,23,98,33,0.75,0.75,0.88,0.72
-BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,Best First,No Cost Sensitive,517,32,89,16,0.85,0.85,0.92,0.74
-BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,533,44,77,0,1.0,1.0,0.92,0.74
-BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,Best First,No Cost Sensitive,517,31,90,16,0.85,0.85,0.9,0.75
-BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,Best First,Sensitive Threshold,533,68,53,0,1.0,1.0,0.91,0.56
-BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,533,121,0,0,NaN,NaN,0.87,0.0
-BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,Best First,Sensitive Threshold,520,32,89,13,0.87,0.87,0.9,0.76
-BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,Best First,Sensitive Learning,533,68,53,0,1.0,1.0,0.91,0.56
-BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,Best First,Sensitive Learning,533,121,0,0,NaN,NaN,0.87,0.0
-BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,Best First,Sensitive Learning,520,32,89,13,0.87,0.87,0.9,0.76
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,481,20,101,52,0.66,0.66,0.93,0.67
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,528,112,9,5,0.64,0.64,0.94,0.1
-BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,473,20,101,60,0.63,0.63,0.86,0.64
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,525,34,87,8,0.92,0.92,0.95,0.77
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,530,118,3,3,0.5,0.5,0.91,0.03
-BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,491,20,101,42,0.71,0.71,0.86,0.71
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,525,34,87,8,0.92,0.92,0.95,0.77
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,530,118,3,3,0.5,0.5,0.91,0.03
-BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,No Feature Selection,Sensitive Learning,491,20,101,42,0.71,0.71,0.86,0.71
+BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,No Feature Selection,No Cost Sensitive,522,26,95,11,0.9,0.9,0.96,0.8
+BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,No Feature Selection,No Cost Sensitive,529,116,5,4,0.56,0.56,0.95,0.05
+BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,No Feature Selection,No Cost Sensitive,524,27,94,9,0.91,0.91,0.88,0.81
+BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,No Feature Selection,Sensitive Threshold,533,109,12,0,1.0,1.0,0.96,0.15
+BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Threshold,529,118,3,4,0.43,0.43,0.92,0.03
+BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,No Feature Selection,Sensitive Threshold,524,27,94,9,0.91,0.91,0.88,0.81
+BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,No Feature Selection,Sensitive Learning,533,109,12,0,1.0,1.0,0.96,0.15
+BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,No Feature Selection,Sensitive Learning,529,118,3,4,0.43,0.43,0.92,0.03
+BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,No Feature Selection,Sensitive Learning,524,27,94,9,0.91,0.91,0.88,0.81
+BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,Best First,No Cost Sensitive,530,28,93,3,0.97,0.97,0.93,0.83
+BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,Best First,No Cost Sensitive,531,37,84,2,0.98,0.98,0.91,0.78
+BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,Best First,No Cost Sensitive,530,28,93,3,0.97,0.97,0.89,0.83
+BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,Best First,Sensitive Threshold,533,69,52,0,1.0,1.0,0.91,0.55
+BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,Best First,Sensitive Threshold,533,121,0,0,NaN,NaN,0.85,0.0
+BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,Best First,Sensitive Threshold,530,28,93,3,0.97,0.97,0.89,0.83
+BOOKKEEPER,6,78.96%,21.3%,3.89%,RandomForest,No Sampling,Best First,Sensitive Learning,533,69,52,0,1.0,1.0,0.91,0.55
+BOOKKEEPER,6,78.96%,21.3%,3.89%,NaiveBayes,No Sampling,Best First,Sensitive Learning,533,121,0,0,NaN,NaN,0.85,0.0
+BOOKKEEPER,6,78.96%,21.3%,3.89%,IBk,No Sampling,Best First,Sensitive Learning,530,28,93,3,0.97,0.97,0.89,0.83
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,No Feature Selection,No Cost Sensitive,510,21,100,23,0.81,0.81,0.94,0.78
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,No Feature Selection,No Cost Sensitive,526,109,12,7,0.63,0.63,0.94,0.13
+BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,No Feature Selection,No Cost Sensitive,516,22,99,17,0.85,0.85,0.89,0.8
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,No Feature Selection,Sensitive Threshold,525,32,89,8,0.92,0.92,0.96,0.78
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Threshold,530,117,4,3,0.57,0.57,0.92,0.04
+BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,No Feature Selection,Sensitive Threshold,517,22,99,16,0.86,0.86,0.89,0.8
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,No Feature Selection,Sensitive Learning,525,32,89,8,0.92,0.92,0.96,0.78
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,No Feature Selection,Sensitive Learning,530,117,4,3,0.57,0.57,0.92,0.04
+BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,No Feature Selection,Sensitive Learning,517,22,99,16,0.86,0.86,0.89,0.8
 BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,Best First,No Cost Sensitive,373,16,105,160,0.4,0.4,0.92,0.39
 BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,Best First,No Cost Sensitive,488,22,99,45,0.69,0.69,0.91,0.68
 BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,Best First,No Cost Sensitive,488,22,99,45,0.69,0.69,0.92,0.68
@@ -395,39 +395,39 @@ BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,Best First,Sensitive Threshol
 BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,Oversampling,Best First,Sensitive Learning,530,39,82,3,0.96,0.96,0.92,0.76
 BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,Oversampling,Best First,Sensitive Learning,531,47,74,2,0.97,0.97,0.86,0.71
 BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,Oversampling,Best First,Sensitive Learning,529,38,83,4,0.95,0.95,0.92,0.76
-BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,429,17,104,104,0.5,0.5,0.92,0.52
-BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,529,116,5,4,0.56,0.56,0.93,0.05
-BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,436,18,103,97,0.52,0.52,0.84,0.53
-BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,532,57,64,1,0.98,0.98,0.92,0.64
-BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,529,118,3,4,0.43,0.43,0.9,0.03
-BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,444,18,103,89,0.54,0.54,0.84,0.56
-BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,532,57,64,1,0.98,0.98,0.92,0.64
-BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,529,118,3,4,0.43,0.43,0.9,0.03
-BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,No Feature Selection,Sensitive Learning,444,18,103,89,0.54,0.54,0.84,0.56
-BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,Best First,No Cost Sensitive,396,18,103,137,0.43,0.43,0.9,0.43
-BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,501,19,102,32,0.76,0.76,0.91,0.75
-BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,Best First,No Cost Sensitive,416,23,98,117,0.46,0.46,0.85,0.45
-BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,Best First,Sensitive Threshold,529,43,78,4,0.95,0.95,0.9,0.73
-BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,533,121,0,0,NaN,NaN,0.85,0.0
-BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,Best First,Sensitive Threshold,438,23,98,95,0.51,0.51,0.85,0.51
-BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,Best First,Sensitive Learning,529,43,78,4,0.95,0.95,0.9,0.73
-BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,Best First,Sensitive Learning,533,121,0,0,NaN,NaN,0.85,0.0
-BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,Best First,Sensitive Learning,438,23,98,95,0.51,0.51,0.85,0.51
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,519,24,97,14,0.87,0.87,0.94,0.8
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,528,108,13,5,0.72,0.72,0.94,0.15
-BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,494,23,98,39,0.72,0.72,0.87,0.7
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,531,47,74,2,0.97,0.97,0.95,0.71
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,530,117,4,3,0.57,0.57,0.92,0.04
-BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,497,23,98,36,0.73,0.73,0.87,0.71
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,531,47,74,2,0.97,0.97,0.95,0.71
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,530,117,4,3,0.57,0.57,0.92,0.04
-BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,No Feature Selection,Sensitive Learning,497,23,98,36,0.73,0.73,0.87,0.71
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,Best First,No Cost Sensitive,498,22,99,35,0.74,0.74,0.93,0.72
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,470,16,105,63,0.63,0.63,0.94,0.65
+BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,No Feature Selection,No Cost Sensitive,469,18,103,64,0.62,0.62,0.92,0.64
+BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,No Feature Selection,No Cost Sensitive,527,111,10,6,0.63,0.63,0.94,0.11
+BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,No Feature Selection,No Cost Sensitive,486,20,101,47,0.68,0.68,0.87,0.69
+BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,No Feature Selection,Sensitive Threshold,533,59,62,0,1.0,1.0,0.94,0.63
+BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Threshold,529,118,3,4,0.43,0.43,0.91,0.03
+BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,No Feature Selection,Sensitive Threshold,486,20,101,47,0.68,0.68,0.87,0.69
+BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,No Feature Selection,Sensitive Learning,533,59,62,0,1.0,1.0,0.94,0.63
+BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,No Feature Selection,Sensitive Learning,529,118,3,4,0.43,0.43,0.91,0.03
+BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,No Feature Selection,Sensitive Learning,486,20,101,47,0.68,0.68,0.87,0.69
+BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,Best First,No Cost Sensitive,321,14,107,212,0.34,0.34,0.9,0.3
+BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,Best First,No Cost Sensitive,284,10,111,249,0.31,0.31,0.91,0.26
+BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,Best First,No Cost Sensitive,439,19,102,94,0.52,0.52,0.87,0.54
+BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,Best First,Sensitive Threshold,528,46,75,5,0.94,0.94,0.9,0.7
+BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,Best First,Sensitive Threshold,533,121,0,0,NaN,NaN,0.84,0.0
+BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,Best First,Sensitive Threshold,472,24,97,61,0.61,0.61,0.87,0.61
+BOOKKEEPER,6,42.6%,21.3%,3.89%,RandomForest,Undersampling,Best First,Sensitive Learning,528,46,75,5,0.94,0.94,0.9,0.7
+BOOKKEEPER,6,42.6%,21.3%,3.89%,NaiveBayes,Undersampling,Best First,Sensitive Learning,533,121,0,0,NaN,NaN,0.84,0.0
+BOOKKEEPER,6,42.6%,21.3%,3.89%,IBk,Undersampling,Best First,Sensitive Learning,472,24,97,61,0.61,0.61,0.87,0.61
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,No Feature Selection,No Cost Sensitive,517,25,96,16,0.86,0.86,0.94,0.79
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,No Feature Selection,No Cost Sensitive,526,102,19,7,0.73,0.73,0.95,0.21
+BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,No Feature Selection,No Cost Sensitive,524,27,94,9,0.91,0.91,0.88,0.81
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,No Feature Selection,Sensitive Threshold,531,39,82,2,0.98,0.98,0.96,0.76
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Threshold,530,116,5,3,0.63,0.63,0.93,0.06
+BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,No Feature Selection,Sensitive Threshold,524,27,94,9,0.91,0.91,0.88,0.81
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,No Feature Selection,Sensitive Learning,531,39,82,2,0.98,0.98,0.96,0.76
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,No Feature Selection,Sensitive Learning,530,116,5,3,0.63,0.63,0.93,0.06
+BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,No Feature Selection,Sensitive Learning,524,27,94,9,0.91,0.91,0.88,0.81
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,Best First,No Cost Sensitive,496,21,100,37,0.73,0.73,0.93,0.72
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,Best First,No Cost Sensitive,469,13,108,64,0.63,0.63,0.95,0.66
 BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,Best First,No Cost Sensitive,514,25,96,19,0.83,0.83,0.88,0.77
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,Best First,Sensitive Threshold,531,37,84,2,0.98,0.98,0.93,0.78
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,529,60,61,4,0.94,0.94,0.92,0.6
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,Best First,Sensitive Threshold,532,34,87,1,0.99,0.99,0.93,0.8
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,Best First,Sensitive Threshold,529,57,64,4,0.94,0.94,0.92,0.63
 BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,Best First,Sensitive Threshold,514,25,96,19,0.83,0.83,0.88,0.77
-BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,Best First,Sensitive Learning,531,37,84,2,0.98,0.98,0.93,0.78
-BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,Best First,Sensitive Learning,529,60,61,4,0.94,0.94,0.92,0.6
+BOOKKEEPER,6,115.32%,57.66%,3.89%,RandomForest,SMOTE,Best First,Sensitive Learning,532,34,87,1,0.99,0.99,0.93,0.8
+BOOKKEEPER,6,115.32%,57.66%,3.89%,NaiveBayes,SMOTE,Best First,Sensitive Learning,529,57,64,4,0.94,0.94,0.92,0.63
 BOOKKEEPER,6,115.32%,57.66%,3.89%,IBk,SMOTE,Best First,Sensitive Learning,514,25,96,19,0.83,0.83,0.88,0.77
