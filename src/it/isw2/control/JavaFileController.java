@@ -130,6 +130,7 @@ public class JavaFileController {
 				file.setBugginess("No");
 				file.setLocTouched(0);
 				file.setNumRevisions(0);
+				file.setNumFix(0);
 				file.setAuthList(new ArrayList<>());
 				file.setChg(0);
 				file.setChgList(new ArrayList<>());

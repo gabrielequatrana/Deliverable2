@@ -28,7 +28,7 @@ public class CSVWriter {
 	 */
 	public static void writeCsvBugginess(List<Release> releases, String projName) throws IOException {
 		try (var writer = new FileWriter("out/csv/" + projName.toLowerCase() + "_dataset.csv")) {
-			var attributes = "Version;File_Name;LOC;LOC_touched;NR;NAuth;LOC_added;MAX_LOC_added;AVG_LOC_added;Churn;MAX_Churn;AVG_Churn;ChgSetSize;MAX_ChgSet;AVG_ChgSet;Age;Bugginess\n";
+			var attributes = "Version;File_Name;LOC;LOC_touched;NR;NFix;NAuth;LOC_added;MAX_LOC_added;AVG_LOC_added;Churn;MAX_Churn;AVG_Churn;ChgSetSize;MAX_ChgSet;AVG_ChgSet;Age;Bugginess\n";
 			writer.append(attributes.replace(";", DELIM));
 			
 			for (Release release : releases) {
@@ -43,6 +43,8 @@ public class CSVWriter {
 					writer.append(file.getLocTouched().toString());
 					writer.append(DELIM);
 					writer.append(file.getNumRevisions().toString());
+					writer.append(DELIM);
+					writer.append(file.getNumFix().toString());
 					writer.append(DELIM);
 					writer.append(String.valueOf(file.getAuthList().size()));
 					writer.append(DELIM);	

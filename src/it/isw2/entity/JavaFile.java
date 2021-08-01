@@ -14,6 +14,7 @@ public class JavaFile {
 	private Integer loc;					// Lines of code of the class
 	private Integer locTouched;				// LOC touched (added + removed) of the class
 	private Integer numRevisions;			// Number of commits that have touched the class
+	private Integer numFix;					// Number of fix commits that have touched the class
 	private List<String> authList;			// List of authors of the class
 	private Integer locAdded;				// LOC added to the class
 	private List<Integer> locAddedList;		// List of LOC added to the class
@@ -66,6 +67,14 @@ public class JavaFile {
 
 	public void setNumRevisions(Integer numRevisions) {
 		this.numRevisions = numRevisions;
+	}
+	
+	public Integer getNumFix() {
+		return numFix;
+	}
+
+	public void setNumFix(Integer numFix) {
+		this.numFix = numFix;
 	}
 
 	public Integer getLocAdded() {

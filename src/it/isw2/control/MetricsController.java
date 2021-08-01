@@ -62,14 +62,18 @@ public class MetricsController {
 	
 	private static void getMetrics(List<DiffEntry> diffs, List<JavaFile> files, String authName, DiffFormatter df, RevCommit commit, List<Release> releases) {
 		var numDiff = 0;
+		var bugFix = false;
+		
+		String message = commit.getFullMessage();
+		if (message.contains("fix") && !message.contains("prefix") && !message.contains("postfix")) {
+			bugFix = true;
+		}
 		
 		for (DiffEntry diff : diffs) {
+			String type = diff.getChangeType().toString();
+			
 			if (diff.toString().contains(".java")) {
 				numDiff++;
-			}
-			
-			String type = diff.getChangeType().toString();
-			if (diff.toString().contains(".java") && (type.equals("MODIFY") || type.equals("DELETE") || type.equals("ADD") || type.equals("RENAME"))) {
 				String file;
 				if (type.equals("DELETE") || type.equals("RENAME")) {
 					file = diff.getOldPath();
@@ -77,13 +81,13 @@ public class MetricsController {
 				else {
 					file = diff.getNewPath();
 				}
-				
+					
 				if (type.equals("ADD")) {
 					long addDate = commit.getCommitTime() * 1000L;
 					setAddDate(file, addDate, releases);
 				}
-				
-				addFiles(files, file, authName, numDiff, diff, df);
+					
+				addFiles(files, file, authName, numDiff, diff, df, bugFix);
 			}
 		}
 	}
@@ -98,7 +102,7 @@ public class MetricsController {
 		}
 	}
 	
-	private static void addFiles(List<JavaFile> files, String fileName, String authName, int numDiff, DiffEntry diff, DiffFormatter df) {
+	private static void addFiles(List<JavaFile> files, String fileName, String authName, int numDiff, DiffEntry diff, DiffFormatter df, boolean bugFix) {
 		var fileInList = 0;
 		var locAdded = 0;
 		var locDeleted = 0;
@@ -120,7 +124,7 @@ public class MetricsController {
 		for (JavaFile file : files) {
 			if (file.getPath().equals(fileName)) {
 				file.setLocTouched(file.getLocTouched() + locTouched);
-				file.setNumRevisions(file.getNumRevisions()+1);
+				file.setNumRevisions(file.getNumRevisions() + 1);
 				file.getAuthList().add(authName);
 				file.setChg(file.getChg() + numDiff);
 				file.getChgList().add(numDiff);
@@ -128,6 +132,10 @@ public class MetricsController {
 				file.getLocAddedList().add(locAdded);
 				file.setChurn(file.getChurn() + churn);
 				file.getChurnList().add(churn);
+				
+				if (bugFix) {
+					file.setNumFix(file.getNumFix() + 1);
+				}
 				
 				fileInList = 1;
 			}
@@ -157,6 +165,13 @@ public class MetricsController {
 			file.setChurn(churn);
 			file.setChurnList(churnList);
 			
+			if (bugFix) {
+				file.setNumFix(1);
+			}
+			else {
+				file.setNumFix(0);
+			}
+			
 			files.add(file);
 		}
 	}
@@ -184,6 +199,7 @@ public class MetricsController {
 					
 					releaseFile.setLocTouched(releaseFile.getLocTouched() + file.getLocTouched());
 					releaseFile.setNumRevisions(releaseFile.getNumRevisions() + file.getNumRevisions());
+					releaseFile.setNumFix(releaseFile.getNumFix() + file.getNumFix());
 					releaseFile.setAuthList(authList);
 					releaseFile.setChg(releaseFile.getChg() + file.getChg());
 					releaseFile.setChgList(chgList);
