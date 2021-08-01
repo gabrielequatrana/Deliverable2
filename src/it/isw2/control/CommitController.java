@@ -55,7 +55,7 @@ public class CommitController {
 			}
 		}
 		
-		// Set last commit for every release
+		// Set last commit for each release
 		for (Release release : releases) {
 			try {
 				release.setLastCommit(release.getCommits().get(release.getCommits().size()-1));

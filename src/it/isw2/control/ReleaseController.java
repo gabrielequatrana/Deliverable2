@@ -30,7 +30,7 @@ public class ReleaseController {
 	}
 
 	/**
-	 * Retrievs the releases of a project with the Rest API of JIRA
+	 * Retrieves the releases of a project with the Rest API of JIRA
 	 * @param projName
 	 * @return releases
 	 * @throws IOException
@@ -39,7 +39,7 @@ public class ReleaseController {
 	public static List<Release> getReleases(String projName) throws IOException, JSONException {
 		List<Release> releaseList = new ArrayList<>();
 
-		// Fills the arraylist with releases dates and orders them
+		// Fills the array list with releases dates and orders them
 		// Ignores releases with missing dates
 		releases = new ArrayList<>();
 		Integer i;

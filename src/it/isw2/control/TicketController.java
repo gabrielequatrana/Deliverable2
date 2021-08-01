@@ -98,7 +98,7 @@ public class TicketController {
 		return avList;
 	}
 	
-	// Return OV for a ticket
+	// Return OV of a ticket
 	private static Integer getOVIndex(LocalDateTime date, List<Release> releases) {
 		Integer releaseIndex = 0;
 		
@@ -117,7 +117,7 @@ public class TicketController {
 	}
 	
 	/**
-	 * Set correct AV list for every ticket
+	 * Set correct AV list for each ticket
 	 * @param tickets
 	 */
 	public static void checkAV(List<Ticket> tickets) {
