@@ -27,6 +27,15 @@
         <pathelement location="lib/SMOTE.jar"/>
         <pathelement location="lib/weka.jar"/>
     </path>
+    <path id="run.Main (6).classpath">
+        <path refid="Deliverable2.classpath"/>
+        <pathelement location="lib/java-json.jar"/>
+        <pathelement location="lib/jgit.jar"/>
+        <pathelement location="lib/slf4j-api-1.7.9.jar"/>
+        <pathelement location="lib/slf4j-simple-1.7.9.jar"/>
+        <pathelement location="lib/SMOTE.jar"/>
+        <pathelement location="lib/weka.jar"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -65,6 +74,11 @@
     <target name="ComputeAccuracy">
         <java classname="it.isw2.ComputeAccuracy" failonerror="true" fork="yes">
             <classpath refid="run.ComputeAccuracy.classpath"/>
+        </java>
+    </target>
+    <target name="Main (6)">
+        <java classname="it.isw2.Main" failonerror="true" fork="yes">
+            <classpath refid="run.Main (6).classpath"/>
         </java>
     </target>
 </project>
