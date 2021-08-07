@@ -87,10 +87,10 @@ public class CommitController {
 			
 			for (RevCommit commit : commits) {
 				String message = commit.getFullMessage();
-				if (message.contains(ticketID +",") || message.contains(ticketID +"\r") || message.contains(ticketID +"\n") 
-						|| message.contains(ticketID + " ") || message.contains(ticketID +":") || message.contains(ticketID +".")
-						|| message.contains(ticketID + "/") || message.endsWith(ticketID) || message.contains(ticketID + "]")
-						|| message.contains(ticketID+"_") || message.contains(ticketID + "-") || message.contains(ticketID + ")")) {
+				if (message.contains(ticketID +",") || message.contains(ticketID + " ") || message.contains(ticketID + ":") 
+						|| message.contains(ticketID + ".") || message.contains(ticketID + "\r") || message.contains(ticketID + "_") 
+						|| message.contains(ticketID + "-") || message.contains(ticketID + "\n") || message.contains(ticketID + ")")
+						|| message.contains(ticketID + "/") || message.endsWith(ticketID) || message.contains(ticketID + "]")) {
 					
 					LocalDateTime commitDate = commit.getAuthorIdent().getWhen().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 					commitDates.add(commitDate);
