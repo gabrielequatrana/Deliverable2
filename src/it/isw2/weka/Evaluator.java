@@ -240,30 +240,30 @@ public class Evaluator {
 				evalIBK.evaluateModel(csIBK, testing);
 			}
 	
-			entryRF.setTP((int) evalRF.numTruePositives(0));
-			entryRF.setFP((int) evalRF.numFalsePositives(0));
-			entryRF.setTN((int) evalRF.numTrueNegatives(0));
-			entryRF.setFN((int) evalRF.numFalseNegatives(0));
+			entryRF.setTP((int) evalRF.numTruePositives(1));
+			entryRF.setFP((int) evalRF.numFalsePositives(1));
+			entryRF.setTN((int) evalRF.numTrueNegatives(1));
+			entryRF.setFN((int) evalRF.numFalseNegatives(1));
 			entryRF.setPrecision(Utilities.round(evalRF.precision(1), 2));
-			entryRF.setRecall(Utilities.round(evalRF.precision(1), 2));
+			entryRF.setRecall(Utilities.round(evalRF.recall(1), 2));
 			entryRF.setAuc(Utilities.round(evalRF.areaUnderROC(1), 2));
 			entryRF.setKappa(Utilities.round(evalRF.kappa(), 2));
 	
-			entryNB.setTP((int) evalNB.numTruePositives(0));
-			entryNB.setFP((int) evalNB.numFalsePositives(0));
-			entryNB.setTN((int) evalNB.numTrueNegatives(0));
-			entryNB.setFN((int) evalNB.numFalseNegatives(0));
+			entryNB.setTP((int) evalNB.numTruePositives(1));
+			entryNB.setFP((int) evalNB.numFalsePositives(1));
+			entryNB.setTN((int) evalNB.numTrueNegatives(1));
+			entryNB.setFN((int) evalNB.numFalseNegatives(1));
 			entryNB.setPrecision(Utilities.round(evalNB.precision(1), 2));
-			entryNB.setRecall(Utilities.round(evalNB.precision(1), 2));
+			entryNB.setRecall(Utilities.round(evalNB.recall(1), 2));
 			entryNB.setAuc(Utilities.round(evalNB.areaUnderROC(1), 2));
 			entryNB.setKappa(Utilities.round(evalNB.kappa(), 2));
 	
-			entryIBK.setTP((int) evalIBK.numTruePositives(0));
-			entryIBK.setFP((int) evalIBK.numFalsePositives(0));
-			entryIBK.setTN((int) evalIBK.numTrueNegatives(0));
-			entryIBK.setFN((int) evalIBK.numFalseNegatives(0));
+			entryIBK.setTP((int) evalIBK.numTruePositives(1));
+			entryIBK.setFP((int) evalIBK.numFalsePositives(1));
+			entryIBK.setTN((int) evalIBK.numTrueNegatives(1));
+			entryIBK.setFN((int) evalIBK.numFalseNegatives(1));
 			entryIBK.setPrecision(Utilities.round(evalIBK.precision(1), 2));
-			entryIBK.setRecall(Utilities.round(evalIBK.precision(1), 2));
+			entryIBK.setRecall(Utilities.round(evalIBK.recall(1), 2));
 			entryIBK.setAuc(Utilities.round(evalIBK.areaUnderROC(1), 2));
 			entryIBK.setKappa(Utilities.round(evalIBK.kappa(), 2));
 	
@@ -396,16 +396,19 @@ public class Evaluator {
 		CostSensitiveClassifier cssRF = new CostSensitiveClassifier();
 		cssRF.setClassifier(new RandomForest());
 		cssRF.setCostMatrix(buildCostMatrix(1, 10));
+		cssRF.setMinimizeExpectedCost(true);
 		csClassifiers.add(cssRF);
 
 		CostSensitiveClassifier cssNB = new CostSensitiveClassifier();
 		cssNB.setClassifier(new NaiveBayes());
 		cssNB.setCostMatrix(buildCostMatrix(1, 10));
+		cssNB.setMinimizeExpectedCost(true);
 		csClassifiers.add(cssNB);
 
 		CostSensitiveClassifier cssIBK = new CostSensitiveClassifier();
 		cssIBK.setClassifier(new IBk());
 		cssIBK.setCostMatrix(buildCostMatrix(1, 10));
+		cssIBK.setMinimizeExpectedCost(true);
 		csClassifiers.add(cssIBK);
 
 		return csClassifiers;

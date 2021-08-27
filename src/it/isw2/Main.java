@@ -28,7 +28,7 @@ import it.isw2.weka.Evaluator;
 
 public class Main {
 	
-	private static final String PROJ_NAME = "BOOKKEEPER";					// Select BOOKKEEPER or TAJO
+	private static final String PROJ_NAME = "TAJO";					// Select BOOKKEEPER or TAJO
 	private static String repoDir = "proj/" + PROJ_NAME.toLowerCase();
 	private static String repo = repoDir + "/.git";
 	
