@@ -28,7 +28,7 @@ import it.isw2.weka.Evaluator;
 
 public class Main {
 	
-	private static final String PROJ_NAME = "TAJO";					// Select BOOKKEEPER or TAJO
+	private static final String PROJ_NAME = "BOOKKEEPER";					// Select BOOKKEEPER or TAJO
 	private static String repoDir = "proj/" + PROJ_NAME.toLowerCase();
 	private static String repo = repoDir + "/.git";
 	
@@ -105,14 +105,6 @@ public class Main {
 			Utilities.logError(e);
 		}
 		
-		// Check bugginess of all java files
-		Utilities.logMsg("Setting bugginess of java files \n");
-		try {
-			JavaFileController.checkBugginess(releases, tickets, fileMap);
-		} catch (IOException e) {
-			Utilities.logError(e);
-		}
-		
 		// Compute metrics for each file
 		Utilities.logMsg("Computing metrics for each java file\n");
 		try {
@@ -121,8 +113,16 @@ public class Main {
 			Utilities.logError(e);
 		}
 		
-		// Save metrics on CSV file
-		Utilities.logMsg("Making file csv bugginess\n");
+		// Check bugginess of all java files
+		Utilities.logMsg("Setting bugginess of java files \n");
+		try {
+			JavaFileController.checkBugginess(releases, tickets, fileMap);
+		} catch (IOException e) {
+			Utilities.logError(e);
+		}
+		
+		// Save results on CSV file
+		Utilities.logMsg("Making file csv dataset\n");
 		try {
 			CSVWriter.writeCsvBugginess(releases, PROJ_NAME);
 		} catch (IOException e) {
