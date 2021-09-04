@@ -21,6 +21,7 @@ import it.isw2.control.TicketController;
 import it.isw2.entity.EvalEntry;
 import it.isw2.entity.Release;
 import it.isw2.entity.Ticket;
+import it.isw2.exception.WekaException;
 import it.isw2.utility.CSVWriter;
 import it.isw2.utility.Utilities;
 import it.isw2.weka.CsvToArff;
@@ -85,14 +86,6 @@ public class Main {
 		Utilities.logMsg("Getting actual AV list for each ticket\n");
 		TicketController.checkAV(tickets);
 		
-		// Rename old path file with new path name
-		Utilities.logMsg("Renaming old path to new path\n");
-		try {
-			fileMap = JavaFileController.checkRename(releases, repo);
-		} catch (IOException e) {
-			Utilities.logError(e);
-		}
-		
 		// Remove last half of releases of a project
 		Utilities.logMsg("Removing last half of releases\n");
 		ReleaseController.removeHalfReleases(releases, tickets);
@@ -100,6 +93,7 @@ public class Main {
 		// Get all java files of the repository
 		Utilities.logMsg("Getting java files from repository\n");
 		try {
+			fileMap = JavaFileController.checkRename(releases, repo);
 			JavaFileController.getJavaFiles(Paths.get(repo), releases, fileMap);
 		} catch (IOException e) {
 			Utilities.logError(e);
@@ -141,7 +135,7 @@ public class Main {
 		Utilities.logMsg("Evaluating datatset\n");
 		try {
 			entries = Evaluator.evaluate(PROJ_NAME, releases.size());
-		} catch (Exception e) {
+		} catch (WekaException e) {
 			Utilities.logError(e);
 		}
 		

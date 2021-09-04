@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import it.isw2.entity.EvalEntry;
-import it.isw2.exception.CustomException;
+import it.isw2.exception.WekaException;
 import it.isw2.utility.Utilities;
 import weka.attributeSelection.BestFirst;
 import weka.attributeSelection.CfsSubsetEval;
@@ -46,9 +46,9 @@ public class Evaluator {
 	 * @param projName
 	 * @param parts
 	 * @return eval entries
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	public static List<EvalEntry> evaluate(String projName, int parts) throws CustomException {
+	public static List<EvalEntry> evaluate(String projName, int parts) throws WekaException {
 		try {
 			String path = "out/arff/" + projName + ".arff";
 	
@@ -87,7 +87,7 @@ public class Evaluator {
 			return entries;
 			
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 	}
 
@@ -99,9 +99,9 @@ public class Evaluator {
 	 * @param j
 	 * @param k
 	 * @param run
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	private static void applyFilters(Instances training, Instances testing, int i, int j, int k, int run) throws CustomException {
+	private static void applyFilters(Instances training, Instances testing, int i, int j, int k, int run) throws WekaException {
 		try {
 			int numAttr = training.numAttributes();
 			training.setClassIndex(numAttr - 1);
@@ -135,7 +135,7 @@ public class Evaluator {
 			compute(training, testing, csClassifiers, i, j, k, run);
 			
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 		
 	}
@@ -149,9 +149,9 @@ public class Evaluator {
 	 * @param j
 	 * @param k
 	 * @param run
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	private static void compute(Instances training, Instances testing, List<CostSensitiveClassifier> csClassifiers, int i, int j, int k, int run) throws CustomException {
+	private static void compute(Instances training, Instances testing, List<CostSensitiveClassifier> csClassifiers, int i, int j, int k, int run) throws WekaException {
 		try {
 			Evaluation evalRF = null;
 			Evaluation evalNB = null;
@@ -272,7 +272,7 @@ public class Evaluator {
 			entries.add(entryIBK);
 			
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 	}
 
@@ -281,9 +281,9 @@ public class Evaluator {
 	 * @param training
 	 * @param testing
 	 * @return instances
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	private static List<Instances> bestFirst(Instances training, Instances testing) throws CustomException {
+	private static List<Instances> bestFirst(Instances training, Instances testing) throws WekaException {
 		try {
 			AttributeSelection filter = new AttributeSelection();
 			CfsSubsetEval eval = new CfsSubsetEval();
@@ -302,7 +302,7 @@ public class Evaluator {
 			return instances;
 		
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 	}
 
@@ -310,9 +310,9 @@ public class Evaluator {
 	 * Perform OverSampling on the training set
 	 * @param training
 	 * @return instances
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	private static Instances overSampling(Instances training) throws CustomException {
+	private static Instances overSampling(Instances training) throws WekaException {
 		try {
 			FilteredClassifier fc = new FilteredClassifier();
 	
@@ -328,7 +328,7 @@ public class Evaluator {
 			return Filter.useFilter(training, resample);
 		
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 	}
 
@@ -336,9 +336,9 @@ public class Evaluator {
 	 * Perform UnderSampling on the training set
 	 * @param training
 	 * @return instances
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	private static Instances underSampling(Instances training) throws CustomException {
+	private static Instances underSampling(Instances training) throws WekaException {
 		try {
 			FilteredClassifier fc = new FilteredClassifier();
 	
@@ -351,7 +351,7 @@ public class Evaluator {
 			return Filter.useFilter(training, spreadSubsample);
 		
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 	}
 
@@ -359,9 +359,9 @@ public class Evaluator {
 	 * Perform SMOTE on the training set
 	 * @param training
 	 * @return instances
-	 * @throws CustomException
+	 * @throws WekaException
 	 */
-	private static Instances smote(Instances training) throws CustomException {
+	private static Instances smote(Instances training) throws WekaException {
 		try {
 			FilteredClassifier fc = new FilteredClassifier();
 	
@@ -381,7 +381,7 @@ public class Evaluator {
 			return Filter.useFilter(training, smote);
 		
 		} catch (Exception e) {
-			throw new CustomException();
+			throw new WekaException();
 		}
 	}
 

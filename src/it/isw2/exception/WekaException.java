@@ -1,6 +1,6 @@
 package it.isw2.exception;
 
-public class CustomException extends Exception {
+public class WekaException extends Exception {
 
 	/**
 	 * 
